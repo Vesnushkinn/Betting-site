@@ -5,12 +5,21 @@ body {
     font-style: normal;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header__container {
+    width: 80%;
+    margin: auto;
+}
+
 .header__menu {
     padding: 0px;
     font-family: "Montserrat";
     font-style: normal;
     margin: 0px;
-    max-width: 100%;
 }
 
 .navigation__list {
@@ -476,8 +485,17 @@ body {
     margin: 0px;
 }
 
+.tittle__2--orange {
+    color: rgba(251, 176, 59, 1);
+}
+
 .crosses {
     height: 14vw;
+}
+
+.opportunities__crosses {
+    padding-bottom: 20vw;
+    padding-right: 1vw;
 }
 
 .lines__side {
@@ -490,6 +508,11 @@ body {
 .text__benefit {
     display: flex;
     align-items: center;
+}
+.text__opportunity {
+    justify-content: end;
+    align-items: flex-start;
+    column-gap: 4%;
 }
 
 .info__checkmark {
@@ -504,6 +527,18 @@ body {
     font-size: 2.5vw;
     line-height: 100%;
     color: #040218;
+}
+.opportunity__text-l {
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 2.5vw;
+    line-height: 100%;
+    color: #040218;
+    max-width: 36%;
+    padding-bottom: 0.5vw;
+    border-bottom: 0.4vw solid #feab41;
 }
 
 .text__paragraph {
@@ -601,6 +636,14 @@ body {
     margin-top: 0.2vw;
 }
 
+.opportunity__more {
+    align-items: center;
+    justify-content: start;
+    flex-wrap: nowrap;
+    margin-top: 0.2vw;
+    width: 60%;
+}
+
 .more__text {
     margin-right: 0.5vw;
     font-weight: 700;
@@ -609,11 +652,21 @@ body {
     padding: 0px;
 }
 
+.more__text--blue {
+    color: #0057ff;
+}
+
 .best__tittle {
     padding-left: 10%;
     max-width: 90%;
     font-size: 4vw;
     margin-bottom: 3vw;
+    padding-top: 4vw;
+}
+.opportunities__tittle {
+    padding-left: 10%;
+    max-width: 90%;
+    font-size: 4vw;
     padding-top: 4vw;
 }
 
@@ -628,6 +681,150 @@ body {
     font-weight: 600;
     font-size: 1.4vw;
     color: #040218;
+}
+
+.opportunities {
+    position: relative;
+    display: grid;
+}
+
+.opportunities__container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4vw;
+    display: grid;
+    row-gap: 4vw;
+    margin-top: 3vw;
+}
+
+.opportunity__paragraph {
+    max-width: 60%;
+}
+
+.opportunities__line {
+    left: -16%;
+    top: 55%;
+}
+
+.footer {
+    background-color: #040218;
+    color: #ffffff;
+    position: relative;
+}
+
+.footer__container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 3vw;
+    row-gap: 1vw;
+    column-gap: 6vw;
+    padding-bottom: 1vw;
+}
+
+.footer__countries {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer__navigation--tittle {
+    padding: 0px;
+    padding-bottom: 0.5vw;
+    border-bottom: 0.4vw solid #feab41;
+    margin-bottom: 2vw;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+.footer__navigation--item {
+    font-weight: 500;
+    font-size: 1.3vw;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 1.5vw;
+}
+
+.country {
+    background-color: rgba(0, 87, 255, 0.18);
+    border-radius: 1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.country__container {
+    padding: 0.5vw 0.8vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.country__flag {
+    width: 2vw;
+}
+
+.country__text {
+    font-weight: 500;
+    font-size: 1.1vw;
+    color: #ffffff;
+    margin: 0px;
+    padding-left: 1vw;
+}
+
+.footer__text {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-weight: 400;
+    font-size: 1.1vw;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.footer__age {
+    display: flex;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 3vw;
+    margin: 0px;
+    font-size: 1.3vw;
+    color: #ffffff;
+}
+
+.rules {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.rules__item {
+    font-weight: 400;
+    font-size: 0.8vw;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.footer__law {
+    font-weight: 400;
+    font-size: 0.7vw;
+    color: rgba(255, 255, 255, 0.5);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
 }
 
 @media only screen and (max-width: 700px) {
