@@ -5,6 +5,14 @@ body {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+}
+
+.navigation__list-item {
+    color: rgba(4, 2, 24, 1);
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -71,13 +79,20 @@ body {
     padding: 3vw 2vw 1vw 10vw;
 }
 
+.banner__block--bonus {
+    background-image: url(img/bannerbonus.jpg);
+    background-position: 0px 0px;
+    background-size: cover;
+    object-fit: cover;
+}
+
 .banner__text {
     margin: 0px;
     padding: 0px;
     display: grid;
     color: white;
     height: 100%;
-    row-gap: 1vw;
+    row-gap: 3vw;
 }
 
 .banner__title--l {
@@ -103,7 +118,6 @@ body {
     font-weight: 400;
     font-size: 1vw;
     line-height: 30px;
-    text-align: end;
     margin: 0px;
     padding: 0px;
 }
@@ -493,6 +507,11 @@ body {
     height: 14vw;
 }
 
+.crosses__absolute {
+    position: absolute;
+    right: -8vw;
+}
+
 .opportunities__crosses {
     padding-bottom: 20vw;
     padding-right: 1vw;
@@ -503,6 +522,11 @@ body {
     transform: rotate(90deg);
     left: -33%;
     top: 45%;
+}
+
+.lines__side--right {
+    left: 74%;
+    top: 25%;
 }
 
 .text__benefit {
@@ -826,6 +850,8 @@ body {
     margin: 0px;
     padding: 0px;
 }
+
+
 
 @media only screen and (max-width: 700px) {
     .offers {
