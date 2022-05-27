@@ -86,6 +86,11 @@ a {
     object-fit: cover;
 }
 
+.banner__block--guias {
+    background-image: url(img/bannerguias.jpg);
+    height: 30vw;
+}
+
 .banner__text {
     margin: 0px;
     padding: 0px;
@@ -529,6 +534,14 @@ a {
     top: 25%;
 }
 
+.lines__side--guias {
+    top: 70%;
+}
+.lines__side--guias2 {
+    top: 20%;
+    left: -20%;
+}
+
 .text__benefit {
     display: flex;
     align-items: center;
@@ -578,6 +591,14 @@ a {
     max-width: 90%;
     font-size: 4vw;
     margin-bottom: 3vw;
+}
+
+.bonuses__guias {
+    margin-top: 4vw;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .bonuses__filters {
@@ -851,7 +872,28 @@ a {
     padding: 0px;
 }
 
+.other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 87, 255, 1);
+}
 
+.other__text {
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 0px;
+    margin: 1vw 1vw 1vw 0vw;
+}
+
+.other__arrow {
+    width: 1.5vw;
+}
+
+.gias__other {
+    margin-bottom: 5vw;
+}
 
 @media only screen and (max-width: 700px) {
     .offers {
