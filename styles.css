@@ -87,6 +87,12 @@ a {
     background-size: cover;
     object-fit: cover;
 }
+.banner__block-casino {
+    background-image: url(img/casino.jpg);
+    background-position: 0px 0px;
+    background-size: cover;
+    object-fit: cover;
+}
 
 .banner__block-guias {
     background-image: url(img/bannerguias.jpg);
@@ -580,6 +586,7 @@ a {
     max-width: 36%;
     padding-bottom: 0.5vw;
     border-bottom: 0.4vw solid #feab41;
+    display: grid;
 }
 
 .text__paragraph {
