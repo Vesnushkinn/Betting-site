@@ -512,6 +512,7 @@ a {
     line-height: auto;
     padding: 0px;
     margin: 0px;
+    max-width: 80%;
 }
 
 .tittle__2-orange {
@@ -737,11 +738,13 @@ a {
     font-weight: 600;
     font-size: 1.4vw;
     color: #040218;
+    max-width: 80%;
 }
 
 .opportunities {
     position: relative;
     display: grid;
+    margin-bottom: 2vw;
 }
 
 .opportunities__container {
