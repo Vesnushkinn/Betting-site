@@ -576,6 +576,13 @@ a {
     line-height: 100%;
     color: #040218;
 }
+
+.benefit__text-s {
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    font-weight: 500;
+}
+
 .opportunity__text-l {
     padding: 0px;
     margin: 0px;
@@ -698,7 +705,12 @@ a {
     justify-content: start;
     flex-wrap: nowrap;
     margin-top: 0.2vw;
-    width: 60%;
+    width: 55%;
+}
+
+.opportunity__more-end {
+    width: 51%;
+    justify-content: end;
 }
 
 .more__text {
@@ -758,7 +770,7 @@ a {
 }
 
 .opportunity__paragraph {
-    max-width: 60%;
+    max-width: 55%;
 }
 
 .opportunities__line {
@@ -1158,6 +1170,150 @@ a {
     font-weight: 500;
     font-size: 1.6vw;
     color: #040218;
+}
+
+.tittle__page {
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+}
+
+.tittle__2-page {
+    font-size: 3.6vw;
+    max-width: 100%;
+}
+
+.opportunities-border {
+    border: 2px solid #0057ff;
+    box-sizing: border-box;
+    padding-bottom: 1vw;
+}
+
+.tittle__3-page {
+    max-width: 100%;
+}
+
+.opportunities__container-page {
+    width: 90%;
+    padding-right: 1.3vw;
+    padding-left: 4vw;
+}
+
+.opportunity__more-magrin {
+    margin-top: 2vw;
+}
+
+.text__opportunity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7vw;
+    row-gap: 1vw;
+    width: 100%;
+}
+
+.text__benefit-page {
+    max-width: 70%;
+}
+
+.lines__side-halfup {
+    transform: rotate(0deg);
+    top: 0%;
+    left: 65%;
+}
+.lines__side-halfdown {
+    transform: rotate(0deg);
+    top: 36%;
+    left: 72%;
+}
+
+.plus {
+    width: 2.5vw;
+}
+
+.page__image {
+    width: 100%;
+}
+
+.info-page {
+    margin: 6vw 0px 6vw 0px;
+}
+
+.info__text-page {
+    padding-left: 1.3vw;
+}
+
+.benefit__text-sbold {
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.crosses__page {
+    right: -18vw;
+    top: 3vw;
+}
+
+.opportunity__more-padding {
+    padding-left: 1.3vw;
+}
+
+.opportunity__image {
+    padding-left: 1.3vw;
+    width: 15vw;
+}
+
+.opportunities__line-card {
+    max-width: 100%;
+    background-color: #0057ff;
+    padding-left: 1.3vw;
+    margin-top: 1vw;
+}
+
+.prize__text-line {
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    font-size: 1.6vw;
+}
+
+.tittle__page-padding {
+    padding-top: 0.1vw;
+}
+
+.opportunities-border-orange {
+    border: 2px solid #feab41;
+}
+
+.opportunities__line-cardorange {
+    background-color: #feab41;
+}
+
+.page__text-s {
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.dots__page {
+    position: absolute;
+    top: 3vw;
+    left: 52vw;
+}
+
+.page__text-orange {
+    background-color: #feab41;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    color: white;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.crosses__page-card {
+    width: 12vw;
+    height: auto;
+    right: 8vw;
+    top: 6vw;
+}
+
+.text__opportunity-centre {
+    justify-content: center;
 }
 
 @media only screen and (max-width: 700px) {
