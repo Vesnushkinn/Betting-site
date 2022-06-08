@@ -1166,7 +1166,7 @@ a {
 
 .page__text {
     padding: 1vw 1.3vw;
-    margin: 0px;
+    margin: 1vw 0vw 2vw 0vw;
     font-weight: 500;
     font-size: 1.6vw;
     color: #040218;
@@ -1313,7 +1313,19 @@ a {
 }
 
 .text__opportunity-centre {
-    justify-content: center;
+    justify-content: left;
+}
+
+.lines__side-tittle {
+    left: 39vw;
+}
+
+.page__text-margin {
+    margin-bottom: 0px;
+}
+
+.page__image-margin {
+    margin-top: 3vw;
 }
 
 @media only screen and (max-width: 700px) {
