@@ -1328,6 +1328,11 @@ a {
     margin-top: 3vw;
 }
 
+.tittle__3-padding {
+    padding-top: 3vw;
+    padding-bottom: 2vw;
+}
+
 @media only screen and (max-width: 700px) {
     .offers {
         width: 90%;
