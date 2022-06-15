@@ -75,9 +75,9 @@ a {
 .banner__block-main {
     background-image: url(img/banner.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom;
     background-size: cover;
-    object-fit: cover;
+    object-fit: fill;
     padding: 3vw 2vw 1vw 10vw;
 }
 
@@ -87,6 +87,7 @@ a {
     background-size: cover;
     object-fit: cover;
 }
+
 .banner__block-casino {
     background-image: url(img/casino.jpg);
     background-position: 0px 0px;
@@ -186,7 +187,7 @@ a {
 .offer {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 0.1fr 1fr 0.1fr 1.3fr;
+    grid-template-columns: 1fr 1fr 0.1fr 1fr 0.1fr 1.3fr;
     grid-column-gap: 0.5vw;
     padding: 2%;
     border: 2px solid;
@@ -241,7 +242,6 @@ a {
 
 .offer__element-info {
     display: grid;
-    grid-template-columns: repeat(auto, 1fr);
     grid-template-rows: repeat(3, auto);
     align-items: center;
     row-gap: 1vw;
@@ -257,7 +257,16 @@ a {
     font-size: 2.5vw;
     line-height: 3vw;
     margin: 0vw;
-    margin-right: 1vw;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.offer__name::after {
+    content: url(img/ball.png) url(img/cubes.png);
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 1vw;
+
 }
 
 .offer__icon {
@@ -273,6 +282,7 @@ a {
     grid-column-end: 3;
     grid-row-start: 1;
 }
+
 .icon__cubes {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -301,23 +311,33 @@ a {
     text-align: center;
     color: #040218;
     margin: 0vw;
-    grid-column-start: 3;
-    grid-column-end: 4;
     grid-row-start: 2;
-    justify-self: left;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
+}
+
+.offer__rating::before {
+    content: url(img/star.png) url(img/star.png) url(img/star.png) url(img/star.png) url(img/star.png);
+    display: block;
+    transform: scale(1);
+    margin-right: 1vw;
+}
+
+.offer__checkbox {
+    grid-row-start: 3;
+    display: flex;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .checkbox {
     border: 1px solid #c7c7c7;
     border-radius: 5px;
     box-sizing: border-box;
-    transform: scale(1.3);
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 
 .offer__compare {
@@ -327,10 +347,6 @@ a {
     line-height: 1.3vw;
     text-transform: uppercase;
     color: #040218;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    margin-left: 4vw;
 }
 
 .line {
@@ -468,6 +484,7 @@ a {
     border: 1.5px solid #0057ff;
     box-sizing: border-box;
 }
+
 .button__analize {
     font-weight: 600;
     font-size: 1vw;
@@ -485,6 +502,7 @@ a {
 .arrow {
     margin-left: 0.5vw;
 }
+
 .button__block {
     display: none;
 }
@@ -512,7 +530,7 @@ a {
     line-height: auto;
     padding: 0px;
     margin: 0px;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .tittle__2-orange {
@@ -548,6 +566,7 @@ a {
 .lines__side-guias {
     top: 70%;
 }
+
 .lines__side-guias2 {
     top: 20%;
     left: -20%;
@@ -557,6 +576,7 @@ a {
     display: flex;
     align-items: center;
 }
+
 .text__opportunity {
     justify-content: end;
     align-items: flex-start;
@@ -692,6 +712,7 @@ a {
 .more {
     display: flex;
 }
+
 .bonus__more {
     align-items: center;
     justify-content: end;
@@ -705,11 +726,11 @@ a {
     justify-content: start;
     flex-wrap: nowrap;
     margin-top: 0.2vw;
-    width: 55%;
+    width: 46%;
 }
 
 .opportunity__more-end {
-    width: 51%;
+    width: 73%;
     justify-content: end;
 }
 
@@ -732,6 +753,7 @@ a {
     margin-bottom: 3vw;
     padding-top: 4vw;
 }
+
 .opportunities__tittle {
     padding-left: 10%;
     max-width: 90%;
@@ -1006,6 +1028,7 @@ a {
     font-size: 0.8vw;
     color: #040218;
 }
+
 .page__header-textxs {
     font-weight: 500;
     font-size: 0.8vw;
@@ -1031,6 +1054,7 @@ a {
     margin: 0px;
     padding-bottom: 0.6vw;
 }
+
 .peson__text-name {
     font-weight: 600;
     font-size: 1.1vw;
@@ -1219,6 +1243,7 @@ a {
     top: 0%;
     left: 65%;
 }
+
 .lines__side-halfdown {
     transform: rotate(0deg);
     top: 36%;
@@ -1415,17 +1440,20 @@ textarea:focus {
     row-gap: 1vw;
     align-items: start;
 }
+
 .comment {
     padding: 0px 1.3vw 2vw 1.3vw;
     margin-top: 2vw;
     margin-bottom: 3vw;
 }
+
 .comment__name {
     margin: 0px;
     padding-bottom: 1vw;
     font-weight: 800;
     font-size: 1.5vw;
 }
+
 .comment__date {
     margin: 0px;
     font-weight: 500;
@@ -1507,14 +1535,25 @@ textarea:focus {
     width: 48%;
 }
 
+.flex__block {
+    display: none;
+} 
+
+.flex__none {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 @media only screen and (max-width: 700px) {
     .offers {
-        width: 90%;
+        padding: 0px 3vw;
+        max-width: 100%;
+        justify-content: stretch;
     }
 
     .offer {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 40% 60%;
         grid-template-rows: auto auto auto auto auto;
         grid-column-gap: 1vw;
         row-gap: 1vw;
@@ -1539,16 +1578,21 @@ textarea:focus {
     }
 
     .offer__benefits {
-        grid-column-start: 1;
-        grid-column-end: 2;
         grid-row-start: 2;
-        grid-row-end: 4;
-        max-width: 70%;
     }
 
     .button__none {
         display: none;
     }
+
+    .flex__none {
+        display: none;
+    }
+
+    .flex__block {
+        display: flex;
+    }
+
     .button__block {
         display: flex;
         grid-column-start: 1;
@@ -1565,8 +1609,9 @@ textarea:focus {
         height: 4vw;
         font-size: 2vw;
     }
+
     .offer__element-image {
-        width: 30vw;
+        width: 32vw;
     }
 
     .arrow {
@@ -1583,7 +1628,9 @@ textarea:focus {
     }
 
     .offer__element-info {
-        row-gap: 2vw;
+        row-gap: 3vw;
+        grid-template-columns: auto;
+        padding-left: 0px;
     }
 
     .offer__rating {
@@ -1591,7 +1638,55 @@ textarea:focus {
     }
 
     .offer__compare {
-        margin-left: 5vw;
-        font-size: 2vw;
+        font-size: 3vw;
     }
+
+    .banner__block-main {
+        padding: 2vw 3vw;
+        background-position: 75% 45%;
+        background-size: 500%;
+    }
+
+    .banner__title-l {
+        max-width: 100%;
+    }
+
+    .banner__description-s {
+        max-width: 100%;
+        font-size: 2vw;
+        line-height: 3.4vw;
+    }
+
+    .banner__notation {
+        max-width: 100%;
+        font-size: 1.5vw;
+    }
+
+    .filters {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2vw;
+        padding: 1vw 3vw;
+    }
+
+    .element {
+        width: auto;
+    }
+
+    .element-extra {
+        font-size: 2vw;
+        width: 100vw;
+    }
+
+    .offer__stars {
+        width: 4vw;
+    }
+    .benefit-text {
+        font-size: 2.4vw;
+    }
+
+    .benefit__checkmark {
+        max-width: 4vw;
+    }
+
 }
