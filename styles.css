@@ -112,7 +112,6 @@ a {
 .banner__title-l {
     font-weight: 700;
     font-size: 4.5vw;
-    line-height: 6vw;
     text-transform: uppercase;
     margin: 0px;
     padding: 0px;
@@ -122,7 +121,6 @@ a {
 .banner__description-s {
     font-weight: 400;
     font-size: 1vw;
-    line-height: 2vw;
     margin: 0px;
     padding: 0px;
     max-width: 50%;
@@ -392,7 +390,7 @@ a {
 .payment__text {
     font-weight: 500;
     font-size: 1.4vw;
-    line-height: 1.7vw;
+    line-height: 130%;
     color: #040218;
     margin: 0px;
 }
@@ -444,7 +442,6 @@ a {
     margin: 0px;
     font-weight: 600;
     font-size: 1.6vw;
-    line-height: auto;
     color: #feab41;
 }
 
@@ -456,11 +453,18 @@ a {
 .get__bonus-text {
     font-weight: 700;
     font-size: 1.2vw;
-    line-height: 1.3vw;
+    line-height: 130%;
     text-transform: uppercase;
     margin: 0px;
     margin-right: 0.5vw;
     color: #040218;
+}
+
+.get__bonus ::after {
+    content: url(img/blackarrow.png);
+    margin-left: 0.3vw;
+    transform: scale(1.5);
+    height: 6vw;
 }
 
 .button {
@@ -473,7 +477,7 @@ a {
 
 .button__open {
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 2;
     line-height: 1.1vw;
     text-align: center;
     text-transform: uppercase;
@@ -510,7 +514,7 @@ a {
 .info {
     display: grid;
     row-gap: 4vw;
-    width: 80%;
+    max-width: 80%;
     margin: auto;
     margin-top: 6vw;
     margin-bottom: 6vw;
@@ -521,13 +525,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .tittle__2 {
     font-weight: 700;
     font-size: 6vw;
-    line-height: auto;
     padding: 0px;
     margin: 0px;
     max-width: 90%;
@@ -680,7 +682,7 @@ a {
 
 .bonuses__bonus {
     position: relative;
-    width: 45%;
+    max-width: 45%;
     height: auto;
     border: 2px solid #0057ff;
     box-sizing: border-box;
@@ -782,7 +784,7 @@ a {
 }
 
 .opportunities__container {
-    width: 80%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4vw;
@@ -807,7 +809,7 @@ a {
 }
 
 .footer__container {
-    width: 80%;
+    max-width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
@@ -1537,11 +1539,21 @@ textarea:focus {
 
 .flex__block {
     display: none;
-} 
+}
 
 .flex__none {
     display: flex;
     flex-wrap: nowrap;
+}
+
+.bonuses__element-block {
+    display: none;
+}
+
+.footer__dots {
+    position: absolute;
+    right: 0%;
+    top: 40%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -1549,6 +1561,7 @@ textarea:focus {
         padding: 0px 3vw;
         max-width: 100%;
         justify-content: stretch;
+        row-gap: 3vw;
     }
 
     .offer {
@@ -1556,7 +1569,7 @@ textarea:focus {
         grid-template-columns: 40% 60%;
         grid-template-rows: auto auto auto auto auto;
         grid-column-gap: 1vw;
-        row-gap: 1vw;
+        row-gap: 2vw;
     }
 
     .line {
@@ -1570,15 +1583,29 @@ textarea:focus {
         grid-row-end: 4;
     }
 
-    .offer__prize {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+    .prize {
+        width: 5vw;
+    }
+
+    .prize__text {
+        font-size: 5vw;
+        margin-left: 1vw;
+    }
+
+    .get__bonus {
+        margin-left: 2vw;
+    }
+
+    .get__bonus-text {
+        font-size: 4vw;
+        margin-right: 1vw;
+        display: flex;
+        align-items: center;
     }
 
     .offer__benefits {
         grid-row-start: 2;
+        border-right: 0.4vw #C7C7C7 solid;
     }
 
     .button__none {
@@ -1591,6 +1618,10 @@ textarea:focus {
 
     .flex__block {
         display: flex;
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 1vw;
     }
 
     .button__block {
@@ -1606,8 +1637,8 @@ textarea:focus {
 
     .button {
         width: 40%;
-        height: 4vw;
-        font-size: 2vw;
+        height: 7vw;
+        font-size: 4vw;
     }
 
     .offer__element-image {
@@ -1615,11 +1646,11 @@ textarea:focus {
     }
 
     .arrow {
-        width: 1.4vw;
+        width: 2.4vw;
     }
 
     .offer__name {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .icon {
@@ -1628,13 +1659,13 @@ textarea:focus {
     }
 
     .offer__element-info {
-        row-gap: 3vw;
+        row-gap: 4vw;
         grid-template-columns: auto;
         padding-left: 0px;
     }
 
     .offer__rating {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .offer__compare {
@@ -1649,44 +1680,286 @@ textarea:focus {
 
     .banner__title-l {
         max-width: 100%;
+        font-size: 8vw;
     }
 
     .banner__description-s {
         max-width: 100%;
-        font-size: 2vw;
-        line-height: 3.4vw;
+        font-size: 4vw;
     }
 
     .banner__notation {
         max-width: 100%;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
 
     .filters {
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 2vw;
-        padding: 1vw 3vw;
+        padding: 1.3vw 3vw;
     }
 
     .element {
         width: auto;
     }
 
-    .element-extra {
-        font-size: 2vw;
-        width: 100vw;
+    .element__image {
+        max-width: 4vw;
     }
+
+    .element__text {
+        font-size: 3vw;
+    }
+
+    .element-extra {
+        font-size: 4vw;
+        width: 100%;
+    }
+
 
     .offer__stars {
         width: 4vw;
     }
+
     .benefit-text {
-        font-size: 2.4vw;
+        font-size: 3vw;
+        line-height: 150%;
     }
 
     .benefit__checkmark {
         max-width: 4vw;
     }
 
+    .payment__text {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    .payment__method-visa {
+        height: 4vw;
+    }
+
+    .offer__payment {
+        row-gap: 4vw;
+
+    }
+
+    .payment__qualiti {
+        font-size: 3vw;
+        height: 6vw;
+        width: 6vw;
+        margin-left: 2vw;
+    }
+
+    .get__bonus ::after {
+        margin-left: 1.3vw;
+    }
+
+    .offer__element-best {
+        top: 4vw;
+        font-size: 3vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    .info {
+        max-width: 100%;
+        padding: 0px 3vw;
+    }
+
+    .tittle__2 {
+        font-size: 8vw;
+        max-width: 100%;
+    }
+
+    .info__checkmark {
+        width: 6vw;
+        height: auto;
+    }
+
+    .benefit__text-l {
+        font-size: 5vw;
+    }
+
+    .text__paragraph {
+        font-size: 3.7vw;
+    }
+
+    .crosses__none {
+        display: none;
+    }
+
+    .bonuses__tittle {
+        max-width: 100%;
+        padding: 0px 3vw;
+    }
+
+    .bonuses__element-none {
+        display: none;
+    }
+
+    .bonuses__element-block {
+        display: flex;
+    }
+
+    .element__arrow {
+        width: 8vw;
+    }
+
+    .bonuses__flex {
+        max-width: 100%;
+        padding: 0px 3vw;
+    }
+
+    .bonuses__bonus {
+        max-width: 100%;
+    }
+
+    .bonus__date {
+        font-size: 2.5vw;
+        padding-top: 2vw;
+        padding-left: 2vw;
+    }
+
+    .bonus__text {
+        font-size: 3.4vw;
+        padding-left: 2vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .more__text {
+        font-size: 3vw;
+    }
+
+    .more__arrow {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .bonus__none {
+        display: none;
+    }
+
+    .best__tittle {
+        max-width: 100%;
+        padding: 0px 3vw;
+    }
+
+    .best__tittle-3 {
+        max-width: 100%;
+        font-size: 3.4vw;
+    }
+
+    .opportunities__tittle {
+        max-width: 100%;
+        padding: 4vw 3vw;
+    }
+
+    .text__opportunity {
+        justify-content: flex-start;
+        row-gap: 3vw;
+        margin-top: 2vw;
+    }
+
+    .opportunity__text-l {
+        max-width: 100%;
+        text-align: left;
+        font-size: 4.5vw;
+    }
+
+    .opportunities__container {
+        max-width: 100%;
+        padding: 0px 3vw;
+        row-gap: 3vw;
+    }
+
+    .opportunity__paragraph {
+        max-width: 100%;
+    }
+
+    .opportunities__line {
+        display: none;
+    }
+
+    .footer__container {
+        max-width: 100%;
+        padding: 3px 3vw;
+        display: block;
+    }
+
+    .footer__navigation {
+        max-width: 100%;
+    }
+
+    .footer__navigation-tittle {
+        max-width: 100%;
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 3vw;
+        display: inline-block;
+    }
+
+    .footer__navigation-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__navigation-item {
+        font-size: 3vw;
+    }
+
+    .country__flag {
+        width: 6vw;
+    }
+
+    .country__text {
+        font-size: 3vw;
+        padding-right: 2vw;
+    }
+
+    .footer__countries {
+        display: grid;
+        justify-content: start;
+        justify-items: start;
+        row-gap: 2vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .footer__dots {
+        width: 25vw;
+        top: 37%;
+    }
+    .footer__text {
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .footer__age {
+        font-size: 2vw;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .rules__item {
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+
+    .footer__law {
+        text-align: left;
+        font-size: 2.5vw;
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+    }
+
+    .banner__block-bonus {
+        background-position: 55% 30%;
+    }
+    .lines {
+        display: none;
+    }
 }
