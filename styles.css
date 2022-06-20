@@ -253,7 +253,6 @@ a {
 .offer__name {
     font-weight: 700;
     font-size: 2.5vw;
-    line-height: 3vw;
     margin: 0vw;
     display: flex;
     flex-wrap: nowrap;
@@ -309,7 +308,6 @@ a {
     text-align: center;
     color: #040218;
     margin: 0vw;
-    grid-row-start: 2;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -456,7 +454,6 @@ a {
     line-height: 130%;
     text-transform: uppercase;
     margin: 0px;
-    margin-right: 0.5vw;
     color: #040218;
 }
 
@@ -595,7 +592,6 @@ a {
     margin-left: 2vw;
     font-weight: 700;
     font-size: 2.5vw;
-    line-height: 100%;
     color: #040218;
 }
 
@@ -611,7 +607,6 @@ a {
     text-align: right;
     font-weight: 700;
     font-size: 2.5vw;
-    line-height: 100%;
     color: #040218;
     max-width: 36%;
     padding-bottom: 0.5vw;
@@ -732,14 +727,18 @@ a {
 }
 
 .opportunity__more-end {
-    width: 73%;
-    justify-content: end;
+    width: 60%;
+    justify-content: start;
+}
+
+.offer__rating-anchor {
+    padding-right: 0.7vw;
 }
 
 .more__text {
     margin-right: 0.5vw;
     font-weight: 700;
-    font-size: 0.9vw;
+    font-size: 1.3vw;
     color: #feab41;
     padding: 0px;
 }
@@ -960,11 +959,12 @@ a {
 .anchor__offer {
     background: #ffffff;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.18);
-    padding: 0.7vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
 }
 
 .main__anchor {
-    width: 14%;
+    width: 16%;
     object-fit: contain;
     margin-left: 3vw;
 }
@@ -975,14 +975,19 @@ a {
 }
 
 .offer__element-anchor {
-    padding: 0px;
+    padding: 0.7vw;
+}
+
+.button__open-margin {
+    margin-top: 1vw;
+    margin-left: 0.7vw;
+    margin-right: 0.7vw;
 }
 
 .button__open-anchor {
-    width: 100%;
+    width: auto;
     font-size: 1.1vw;
     padding: 1vw;
-    margin-top: 1vw;
     border-radius: 3px;
 }
 
@@ -995,7 +1000,7 @@ a {
 .anchor__list-element {
     padding-bottom: 0.2vw;
     font-weight: 500;
-    font-size: 0.8vw;
+    font-size: 1.2vw;
     color: #040218;
 }
 
@@ -1022,7 +1027,7 @@ a {
 }
 
 .benefit-text-s {
-    font-size: 1vw;
+    font-size: 1, 2vw;
 }
 
 .page__header-texts {
@@ -1092,7 +1097,7 @@ a {
 }
 
 .card {
-    width: 30%;
+    width: 33%;
 }
 
 .offer__element-card {
@@ -1154,7 +1159,7 @@ a {
 .lines__object {
     margin: 0px;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.4vw;
     color: #040218;
     display: flex;
     align-items: center;
@@ -1174,7 +1179,7 @@ a {
 }
 
 .lines__object-icon {
-    width: 1.6vw;
+    width: 2vw;
     padding-left: 0.4vw;
 }
 
@@ -1187,7 +1192,7 @@ a {
 }
 
 .lines__object-iconm {
-    width: 2vw;
+    width: 3vw;
 }
 
 .page__text {
@@ -1249,7 +1254,8 @@ a {
 .lines__side-halfdown {
     transform: rotate(0deg);
     top: 36%;
-    left: 72%;
+    left: 64%;
+    max-width: 40vw;
 }
 
 .plus {
@@ -1257,7 +1263,7 @@ a {
 }
 
 .page__image {
-    width: 100%;
+    max-width: 100%;
 }
 
 .info-page {
@@ -1319,7 +1325,7 @@ a {
 
 .dots__page {
     position: absolute;
-    top: 3vw;
+    top: 1vw;
     left: 52vw;
 }
 
@@ -1556,7 +1562,67 @@ textarea:focus {
     top: 40%;
 }
 
-@media only screen and (max-width: 700px) {
+.opportunities__logo {
+    justify-self: right;
+}
+
+.offer__checkbox-special {
+    justify-content: center;
+    grid-row-start: 2;
+}
+
+@media only screen and (max-width: 1230px) {
+    .offer {
+        grid-template-columns: 0.9fr 1.2fr 0.1fr 1fr 0.1fr 1.3fr;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .page__dots-orange {
+        top: 25%;
+        left: 80%;
+        width: 12vw;
+    }
+
+    .page__crosses-orange {
+        top: 89%;
+        left: 65%;
+    }
+
+    .card {
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 1001px) {
+    .offer {
+        grid-template-columns: 0.9fr 1.4fr 0.1fr 1fr 0.1fr 1.4fr;
+    }
+
+    .page__dots-orange {
+        display: none;
+    }
+
+    .page__crosses-orange {
+        display: none;
+    }
+
+    .card {
+        width: 44%;
+    }
+
+    .page__header-way {
+    width: 31%;
+    }
+}
+
+@media only screen and (max-width: 892px) {
+    .offer {
+        grid-template-columns: 0.9fr 1.6fr 0.1fr 1fr 0.1fr 1.4fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .offers {
         padding: 0px 3vw;
         max-width: 100%;
@@ -1697,7 +1763,7 @@ textarea:focus {
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 2vw;
-        padding: 1.3vw 3vw;
+        padding: 3vw 3vw;
     }
 
     .element {
@@ -1775,7 +1841,7 @@ textarea:focus {
 
     .info__checkmark {
         width: 6vw;
-        height: auto;
+        height: 6vw;
     }
 
     .benefit__text-l {
@@ -1783,7 +1849,7 @@ textarea:focus {
     }
 
     .text__paragraph {
-        font-size: 3.7vw;
+        font-size: 4vw;
     }
 
     .crosses__none {
@@ -1804,7 +1870,7 @@ textarea:focus {
     }
 
     .element__arrow {
-        width: 8vw;
+        width: 7vw;
     }
 
     .bonuses__flex {
@@ -1849,7 +1915,7 @@ textarea:focus {
 
     .best__tittle-3 {
         max-width: 100%;
-        font-size: 3.4vw;
+        font-size: 4vw;
     }
 
     .opportunities__tittle {
@@ -1873,6 +1939,7 @@ textarea:focus {
         max-width: 100%;
         padding: 0px 3vw;
         row-gap: 3vw;
+        margin: 0px;
     }
 
     .opportunity__paragraph {
@@ -1932,6 +1999,7 @@ textarea:focus {
         width: 25vw;
         top: 37%;
     }
+
     .footer__text {
         font-size: 3vw;
         margin-top: 2vw;
@@ -1959,7 +2027,436 @@ textarea:focus {
     .banner__block-bonus {
         background-position: 55% 30%;
     }
+
     .lines {
         display: none;
+    }
+
+    .banner__block-casino {
+        background-position: 48% 53%;
+        background-size: 200%;
+    }
+
+    .opportunities__logo {
+        justify-self: left;
+        width: 18vw;
+        padding-bottom: 3vw;
+    }
+
+    .banner__block-guias {
+        background-position: 55% 25%;
+        background-size: 140%;
+    }
+
+    .bonuses__guias {
+        max-width: 100%;
+    }
+
+    .other__arrow {
+        width: 4.5vw;
+    }
+
+    .other__text {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .gias__other {
+        margin-top: 6vw;
+    }
+
+    .anchor {
+        display: none;
+    }
+
+    .main__page {
+        width: 100%;
+        margin-top: 0vw;
+    }
+
+    .page__header-texts {
+        font-size: 2vw;
+    }
+
+    .page__header-way {
+        width: 40%;
+    }
+
+    .page__header-textxs {
+        font-size: 2vw;
+    }
+
+    .peson__text-s {
+        font-size: 2vw;
+    }
+
+    .peson__text-name {
+        font-size: 2.2vw;
+    }
+
+    .person__photo {
+        width: 27%;
+    }
+
+    .page__header {
+        padding: 3vw;
+    }
+
+    .page__banner {
+        padding: 3vw;
+    }
+
+    .banner__title-page {
+        font-size: 3vw;
+    }
+
+    .button__open-anchor {
+        width: auto;
+        font-size: 3vw;
+        max-width: 70%;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .page__lines {
+        padding: 3vw;
+    }
+
+    .prize__text-white {
+        font-size: 4vw;
+    }
+
+    .lines__container {
+        border-bottom: 0.5vw #f1f1f1 solid;
+        ;
+    }
+
+    .lines__tittle {
+        font-size: 2.5vw;
+    }
+
+    .lines__object {
+        font-size: 2.5vw;
+    }
+
+    .lines__object-icon {
+        width: 3.6vw;
+    }
+
+    .lines__object-iconm {
+        width: 5vw;
+        padding-left: 1vw;
+    }
+
+    .page__text {
+        font-size: 4vw;
+        padding: 3vw;
+    }
+
+    .opportunity__more-end {
+        justify-content: start;
+    }
+
+    .offer__prize-orange {
+        padding: 1.5vw;
+    }
+
+    .text__opportunity-grid {
+        grid-template-columns: 1fr;
+        row-gap: 1vw;
+    }
+
+    .plus {
+        width: 5vw;
+        row-gap: 0px;
+        margin-top: 0px;
+    }
+
+    .benefit__text-s {
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .opportunities__container-page {
+        margin-bottom: 4vw;
+    }
+
+    .page__image {
+        padding: 0px 3vw;
+        margin: 0px;
+        width: -webkit-fill-available;
+    }
+
+    .info__tittle {
+        padding: 0px;
+    }
+
+    .info__text-page {
+        padding-left: 0px;
+    }
+
+    .text__benefit {
+        margin-bottom: 1vw;
+    }
+
+    .opportunities__line-card {
+        margin-top: 3vw;
+        padding: 1vw 3vw;
+    }
+
+    .opportunity__image {
+        width: 35vw;
+        padding-left: 3vw;
+    }
+
+    .opportunity__more-padding {
+        padding-left: 3vw;
+        margin-bottom: 2vw;
+        width: 100%;
+    }
+
+    .prize__text-line {
+        margin-left: 0px;
+    }
+
+    .page__text-orange {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .opportunities-border {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    form {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    .form__input {
+        font-size: 2.5vw;
+        padding: 2vw 1vw;
+    }
+
+    .form__input-heihgt {
+        min-height: 20vw;
+    }
+
+    .form__button {
+        max-width: 60%;
+    }
+
+    .comment {
+        padding: 0px 3vw;
+    }
+
+    .comment__photo {
+        width: 10vw;
+    }
+
+    .comment__header {
+        column-gap: 3vw;
+        row-gap: 2vw;
+    }
+
+    .comment__name {
+        font-size: 3vw;
+    }
+
+    .comment__date {
+        font-size: 2vw;
+    }
+
+    .comment__text {
+        font-size: 2.4vw;
+    }
+
+    .comment__reply {
+        padding: 2vw;
+    }
+
+    .reply__text {
+        font-size: 3vw;
+    }
+
+    .reply {
+        border-bottom: 0.5vw solid rgba(199, 199, 199, 0.3);
+    }
+
+    .tittle__page-reply {
+        margin-top: 3vw;
+    }
+
+    .bonuses__bonus-width {
+        width: auto;
+    }
+
+    .tittle__page-reply {
+        padding: 0px 3vw;
+    }
+
+    .bonuses__guias-page {
+        padding-bottom: 10vw;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .footer__dots {
+        top: 19%;
+    }
+
+    .banner__block-main {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .offer__rating::before {
+        transform: scale(0.8);
+    }
+
+    .offer__rating {
+        margin-left: -5vw;
+    }
+
+    .offer__name::after {
+        transform: scale(0.9);
+    }
+
+    .page__header {
+        display: grid;
+        row-gap: 2vw;
+    }
+
+    .page__header-person {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 50%;
+    }
+
+    .page__header-texts {
+        font-size: 3vw;
+    }
+
+    .page__header-textxs {
+        font-size: 3vw;
+    }
+
+    .page__header-way {
+        width: 60%;
+    }
+
+    .peson__text-s {
+        font-size: 3vw;
+    }
+
+    .peson__text-name {
+        font-size: 3.3vw;
+    }
+
+    .peson__text {
+        margin: 2vw;
+        text-align: left;
+    }
+
+    .page__banner {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .banner__block-page {
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .offer__image-anchor {
+        width: 45%;
+        margin-left: 26%;
+    }
+
+    .banner__notation {
+        font-size: 3vw;
+        margin-top: 1.5vw;
+    }
+
+    .banner__title-page {
+        font-size: 5.5vw;
+    }
+
+    .lines__container {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 3vw;
+        border: none;
+        padding-bottom: 2vw;
+    }
+
+    .lines__tittle {
+        font-size: 4vw;
+        border-bottom: 0.5vw #0057FF solid;
+        padding-bottom: 0.5vw;
+    }
+
+    .lines__object {
+        font-size: 4vw;
+    }
+
+    .lines__object-icon {
+        width: 6.6vw;
+    }
+
+    .lines__object-iconm {
+        width: 10vw;
+    }
+
+    .form__input {
+        font-size: 4vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+
+    .form__container {
+        row-gap: 2vw;
+    }
+
+    .form__button {
+        font-size: 4vw;
+    }
+
+    .comment__photo {
+        width: 15vw;
+    }
+
+    .comment__header {
+        grid-template-columns: 20% 80%;
+    }
+
+    .comment__name {
+        font-size: 4vw;
+    }
+
+    .comment__date {
+        font-size: 3vw;
+    }
+
+    .comment__text {
+        font-size: 4vw;
+    }
+
+    .reply__text {
+        font-size: 4vw;
+    }
+
+    .flex__nowrap {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
