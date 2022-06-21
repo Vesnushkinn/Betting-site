@@ -7,6 +7,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .navigation__list-item {
@@ -200,6 +201,8 @@ a {
     border-color: rgba(254, 171, 65, 1);
 }
 
+
+
 .offer__element-image {
     width: 100%;
     background: #ffffff;
@@ -210,7 +213,7 @@ a {
 .offer__element-best {
     position: absolute;
     top: 2.4vw;
-    background: #feab41;
+    background: #0057FF;
     padding-left: 2.5vw;
     padding-right: 3vw;
     padding-top: 0.3vw;
@@ -722,7 +725,7 @@ a {
     align-items: center;
     justify-content: start;
     flex-wrap: nowrap;
-    margin-top: 0.2vw;
+    margin-top: 1.2vw;
     width: 46%;
 }
 
@@ -843,6 +846,7 @@ a {
     color: #ffffff;
     margin-top: 0px;
     margin-bottom: 1.5vw;
+    display: block;
 }
 
 .country {
