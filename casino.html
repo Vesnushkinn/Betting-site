@@ -51,20 +51,268 @@
                     <img class="element__image" src="img/list.png">
                     <p class="element__text element-extra">Ordenar por:</p>
                 </div>
-                <div class="banner__element element">
+                <div id="popular" class="banner__element element banner__element-click">
 
                     <img class="element__image" src="img/heart.png">
-                    <p class="element__text">Mais populares</p>
+                    <p class="element__text  filter__button-js">Mais populares</p>
                 </div>
-                <div class="banner__element element">
+                <div class="banner__element element banner__element-click">
                     <img class="element__image" src="img/clock.png">
-                    <p class="element__text">Novas</p>
+                    <p class="element__text filter__button-js">Novas</p>
                 </div>
-                <div class="banner__element element">
+                <div class="banner__element element banner__element-click">
                     <img class="element__image" src="img/bonus.png">
-                    <p class="element__text">Bônus</p>
+                    <p class="element__text filter__button-js">Bônus</p>
                 </div>
             </div>
+        </div>
+
+        <div class="offers active">
+            <a href="offer.html" class="offer">
+                <div class="offer__element-best">Melhor Casa</div>
+                <div class="offer__element offer__element-image">
+                    <img class="offer__image" src="img/offerimage.webp">
+                </div>
+                <div class="offer__element offer__element-info">
+                    <p class="offer__name">Betano</p>
+                    <p class="offer__rating">5/5</p>
+                    <div class=" offer__checkbox">
+                        <input class="checkbox" type="checkbox">
+                        <p class="offer__compare">Comparar</p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__benefits">
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Bet Menor</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Super Odds</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Aposta Grátis de R$20 </p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__last">
+                    <div class="offer__payment">
+                        <p class="payment__text">Métodos de Pagamento
+                        </p>
+                        <img class="method payment__method payment__method-visa" src="img/visa.png">
+                        <p class="payment__qualiti">4+</p>
+                    </div>
+                    <div class="flex__none">
+                        <div class="offer__prize"><img class="prize" src="img/prize.png">
+                            <p class="prize__text">R$300</p>
+                        </div>
+                        <div class="get__bonus">
+                            <p class="get__bonus-text">Ganhar bônus</p>
+                        </div>
+                    </div>
+                    <button class="button button__open button__none">abrir<img class="arrow"
+                            src="img/arrow.png"></button>
+                    <button class="button button__analize button__none">análise</button>
+                </div>
+                <div class="flex__block">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <div class="button__block">
+                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                    <button class="button button__analize ">análise</button>
+                </div>
+            </a>
+            <a href="offer.html" class="offer">
+                <div class="offer__element-best">Melhor Casa</div>
+                <div class="offer__element offer__element-image">
+                    <img class="offer__image" src="img/offerimage.webp">
+                </div>
+                <div class="offer__element offer__element-info">
+                    <p class="offer__name">Betano</p>
+                    <p class="offer__rating">5/5</p>
+                    <div class=" offer__checkbox">
+                        <input class="checkbox" type="checkbox">
+                        <p class="offer__compare">Comparar</p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__benefits">
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Bet Menor</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Super Odds</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Aposta Grátis de R$20 </p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__last">
+                    <div class="offer__payment">
+                        <p class="payment__text">Métodos de Pagamento
+                        </p>
+                        <img class="method payment__method payment__method-visa" src="img/visa.png">
+                        <p class="payment__qualiti">4+</p>
+                    </div>
+                    <div class="flex__none">
+                        <div class="offer__prize"><img class="prize" src="img/prize.png">
+                            <p class="prize__text">R$300</p>
+                        </div>
+                        <div class="get__bonus">
+                            <p class="get__bonus-text">Ganhar bônus</p>
+                        </div>
+                    </div>
+                    <button class="button button__open button__none">abrir<img class="arrow"
+                            src="img/arrow.png"></button>
+                    <button class="button button__analize button__none">análise</button>
+                </div>
+                <div class="flex__block">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <div class="button__block">
+                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                    <button class="button button__analize ">análise</button>
+                </div>
+            </a>
+            <a href="offer.html" class="offer">
+                <div class="offer__element-best">Melhor Casa</div>
+                <div class="offer__element offer__element-image">
+                    <img class="offer__image" src="img/offerimage.webp">
+                </div>
+                <div class="offer__element offer__element-info">
+                    <p class="offer__name">Betano</p>
+                    <p class="offer__rating">5/5</p>
+                    <div class=" offer__checkbox">
+                        <input class="checkbox" type="checkbox">
+                        <p class="offer__compare">Comparar</p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__benefits">
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Bet Menor</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Super Odds</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Aposta Grátis de R$20 </p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__last">
+                    <div class="offer__payment">
+                        <p class="payment__text">Métodos de Pagamento
+                        </p>
+                        <img class="method payment__method payment__method-visa" src="img/visa.png">
+                        <p class="payment__qualiti">4+</p>
+                    </div>
+                    <div class="flex__none">
+                        <div class="offer__prize"><img class="prize" src="img/prize.png">
+                            <p class="prize__text">R$300</p>
+                        </div>
+                        <div class="get__bonus">
+                            <p class="get__bonus-text">Ganhar bônus</p>
+                        </div>
+                    </div>
+                    <button class="button button__open button__none">abrir<img class="arrow"
+                            src="img/arrow.png"></button>
+                    <button class="button button__analize button__none">análise</button>
+                </div>
+                <div class="flex__block">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <div class="button__block">
+                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                    <button class="button button__analize ">análise</button>
+                </div>
+            </a>
+            <a href="offer.html" class="offer">
+                <div class="offer__element-best">Melhor Casa</div>
+                <div class="offer__element offer__element-image">
+                    <img class="offer__image" src="img/offerimage.webp">
+                </div>
+                <div class="offer__element offer__element-info">
+                    <p class="offer__name">Betano</p>
+                    <p class="offer__rating">5/5</p>
+                    <div class=" offer__checkbox">
+                        <input class="checkbox" type="checkbox">
+                        <p class="offer__compare">Comparar</p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__benefits">
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Bet Menor</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Super Odds</p>
+                    </div>
+                    <div class="benefit offer__benefit">
+                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                        <p class="benefit-text">Aposta Grátis de R$20 </p>
+                    </div>
+                </div>
+                <div class="offer__element line offer__line"></div>
+                <div class="offer__element offer__last">
+                    <div class="offer__payment">
+                        <p class="payment__text">Métodos de Pagamento
+                        </p>
+                        <img class="method payment__method payment__method-visa" src="img/visa.png">
+                        <p class="payment__qualiti">4+</p>
+                    </div>
+                    <div class="flex__none">
+                        <div class="offer__prize"><img class="prize" src="img/prize.png">
+                            <p class="prize__text">R$300</p>
+                        </div>
+                        <div class="get__bonus">
+                            <p class="get__bonus-text">Ganhar bônus</p>
+                        </div>
+                    </div>
+                    <button class="button button__open button__none">abrir<img class="arrow"
+                            src="img/arrow.png"></button>
+                    <button class="button button__analize button__none">análise</button>
+                </div>
+                <div class="flex__block">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <div class="button__block">
+                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                    <button class="button button__analize ">análise</button>
+                </div>
+            </a>
+
         </div>
         <div class="offers">
             <a href="offer.html" class="offer">
@@ -128,67 +376,9 @@
                     <button class="button button__analize ">análise</button>
                 </div>
             </a>
-            <a href="offer.html" class="offer">
-                <div class="offer__element-best">Melhor Casa</div>
-                <div class="offer__element offer__element-image">
-                    <img class="offer__image" src="img/offerimage.webp">
-                </div>
-                <div class="offer__element offer__element-info">
-                    <p class="offer__name">Betano</p>
-                    <p class="offer__rating">5/5</p>
-                    <div class=" offer__checkbox">
-                        <input class="checkbox" type="checkbox">
-                        <p class="offer__compare">Comparar</p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__benefits">
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Bet Menor</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Super Odds</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Aposta Grátis de R$20 </p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__last">
-                    <div class="offer__payment">
-                        <p class="payment__text">Métodos de Pagamento
-                        </p>
-                        <img class="method payment__method payment__method-visa" src="img/visa.png">
-                        <p class="payment__qualiti">4+</p>
-                    </div>
-                    <div class="flex__none">
-                        <div class="offer__prize"><img class="prize" src="img/prize.png">
-                            <p class="prize__text">R$300</p>
-                        </div>
-                        <div class="get__bonus">
-                            <p class="get__bonus-text">Ganhar bônus</p>
-                        </div>
-                    </div>
-                    <button class="button button__open button__none">abrir<img class="arrow"
-                            src="img/arrow.png"></button>
-                    <button class="button button__analize button__none">análise</button>
-                </div>
-                <div class="flex__block">
-                    <div class="offer__prize"><img class="prize" src="img/prize.png">
-                        <p class="prize__text">R$300</p>
-                    </div>
-                    <div class="get__bonus">
-                        <p class="get__bonus-text">Ganhar bônus</p>
-                    </div>
-                </div>
-                <div class="button__block">
-                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
-                    <button class="button button__analize ">análise</button>
-                </div>
-            </a>
+
+        </div>
+        <div class="offers">
             <a href="offer.html" class="offer">
                 <div class="offer__element-best">Melhor Casa</div>
                 <div class="offer__element offer__element-image">
@@ -319,7 +509,8 @@
                     <h2 class="tittle__2">Como Escolher Um<br> <span style="color: #0057FF;">Cassino Online</span>?
                     </h2>
                 </div>
-                <svg class="crosses__none" width="20vw" height="auto" viewBox="0 0 551 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="crosses__none" width="20vw" height="auto" viewBox="0 0 551 641" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_127_10696)">
                         <path
                             d="M37.6199 290.065C34.7105 293.216 30.9321 295.434 26.7626 296.437C22.5931 297.441 18.2196 297.185 14.1952 295.703C10.1707 294.221 6.67611 291.579 4.15314 288.111C1.63017 284.643 0.192163 280.504 0.0209542 276.219C-0.150255 271.933 0.953019 267.693 3.19127 264.035C5.42953 260.377 8.70224 257.464 12.5956 255.666C16.489 253.867 20.8281 253.264 25.0644 253.931C29.3008 254.599 33.2439 256.508 36.3954 259.417C40.6181 263.321 43.1188 268.741 43.3484 274.488C43.578 280.234 41.5176 285.837 37.6199 290.065Z"
@@ -440,15 +631,15 @@
                         Boas-Vindas para jogos de cassino: são <span style="font-weight: bold;"> 100% até R$5.000</span>
                         que pode receber nos primeiros 3
                         depósitos nesse cassino!
-                        <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">REGISTRE-SE</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">REGISTRE-SE</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
                     </p>
-                  
+
                 </div>
                 <div class="opportunity text__opportunity flex">
-                    <p class="opportunity__text-l"><svg class="opportunities__logo"  width="7vw" height="30"
+                    <p class="opportunity__text-l"><svg class="opportunities__logo" width="7vw" height="30"
                             viewBox="0 0 129 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M0.506348 0.570343H9.85095V4.00189H6.86563V19.1848H13.0183V16.1164H16.6771V22.6186H0.506348V19.187H3.07508V4.00521H0.506348V0.570343ZM127.871 11.2126C127.871 11.248 127.871 11.2823 127.871 11.3166C127.877 11.5697 127.832 11.8215 127.739 12.0571C127.645 12.2927 127.505 12.5074 127.327 12.6885C127.148 12.8697 126.935 13.0137 126.7 13.112C126.464 13.2102 126.211 13.2609 125.956 13.2609C125.701 13.2609 125.448 13.2102 125.212 13.112C124.977 13.0137 124.764 12.8697 124.585 12.6885C124.407 12.5074 124.267 12.2927 124.173 12.0571C124.08 11.8215 124.035 11.5697 124.041 11.3166C124.04 11.1292 124.067 10.9426 124.122 10.7631C123.187 10.2694 121.373 10.1045 120.255 10.7631C119.326 11.3166 119.27 12.3959 120.449 12.9571C122.663 14.0109 124.98 13.9213 126.747 15.2873C128.712 16.8071 128.832 19.5557 126.923 21.2316C124.63 23.2429 121.987 23.0027 119.798 22.6706C117.882 22.374 115.529 21.2482 115.481 19.1815V19.1184C115.481 18.5979 115.689 18.0987 116.061 17.7306C116.432 17.3626 116.936 17.1558 117.461 17.1558C117.986 17.1558 118.49 17.3626 118.861 17.7306C119.232 18.0987 119.441 18.5979 119.441 19.1184C119.442 19.2938 119.418 19.4685 119.371 19.6376C120.478 20.1656 122.333 20.3449 123.615 19.9409C125.025 19.4981 125.158 17.9284 123.615 17.3949C121.756 16.7518 119.769 16.4053 118.03 15.4909C114.893 13.8394 115.819 9.66505 118.413 8.44962C122.568 6.50471 127.752 8.22823 127.87 11.217L127.871 11.2126ZM43.661 7.66036C48.4568 7.66036 51.4968 11.0587 51.4968 15.2518C51.4968 19.445 48.3696 22.8433 43.661 22.8433C38.6554 22.8433 35.8253 19.445 35.8253 15.2518C35.8253 11.0587 38.8687 7.66036 43.6655 7.66036H43.661ZM49.6339 13.9401C49.6607 13.9943 49.6618 14.6629 49.6082 14.7559C49.472 14.9917 49.0498 14.746 49.4429 14.3707C49.5517 14.2678 49.6168 14.1277 49.625 13.9788L49.6339 13.9401ZM46.4543 10.2551C46.4922 10.2263 46.4811 10.2617 46.5123 10.3281C46.5606 10.4209 46.601 10.5175 46.633 10.617C46.7022 10.824 46.6754 10.7753 46.6497 10.9868C46.633 11.1329 46.2845 11.0532 46.2845 11.0332C46.2794 10.993 46.2824 10.9521 46.2933 10.9129C46.3043 10.8738 46.3229 10.8372 46.3482 10.8052C46.4397 10.6358 46.3884 10.4731 46.4531 10.2971C46.4554 10.2872 46.4509 10.2562 46.4543 10.2528V10.2551ZM43.5784 10.1444C43.6074 10.2728 43.3952 10.2816 43.2813 10.2252C43.2476 10.2129 43.22 10.1882 43.2042 10.1562C43.1884 10.1243 43.1856 10.0875 43.1964 10.0536C43.1964 10.0381 43.7549 9.42042 43.7604 9.4171C43.6818 9.52882 43.6354 9.65973 43.6264 9.79567C43.6287 9.84438 43.575 10.1255 43.5784 10.1388V10.1444ZM39.5779 10.7056C39.5779 10.8661 39.8359 11.1041 39.5779 11.1484C39.369 11.1882 39.2931 11.1484 39.2875 10.9347C39.2875 10.9347 39.5935 10.2706 39.608 10.2551C39.6056 10.4038 39.5955 10.5523 39.5779 10.7001V10.7056ZM47.4762 17.2377C47.0942 16.9754 46.9177 16.8735 46.9825 16.3732C47.035 15.9935 47.3846 14.9485 47.8648 14.9618C48.4232 14.9762 48.9437 14.5113 49.3781 14.8987C49.8305 15.3028 49.1861 16.2271 49.2799 16.4551C49.4206 16.8071 48.956 17.0772 48.7348 17.251C48.6053 17.3517 48.0848 17.4624 47.8816 17.4071C47.737 17.3761 47.5995 17.3187 47.4762 17.2377ZM46.3269 13.9401C46.5939 13.8205 46.6352 13.8482 46.8854 13.629C47.083 13.4519 47.0283 13.5183 47.1311 13.2848C47.1902 13.0264 47.2117 12.761 47.1947 12.4966C47.1896 12.412 47.1773 12.3279 47.1579 12.2454C47.1087 12.0871 47.1277 12.024 47.0194 11.8469C46.911 11.6697 46.7703 11.3188 46.586 11.2447C46.4811 11.2015 46.442 11.1428 46.2778 11.1849C46.0712 11.238 45.8869 11.4251 45.7741 11.559C45.5574 11.817 45.4949 12.0395 45.3184 12.3417C45.2107 12.566 45.1416 12.8065 45.1141 13.0534C45.1208 13.4829 45.0984 13.3235 45.3564 13.6611C45.4616 13.7887 45.5965 13.889 45.7495 13.9534C45.941 13.9873 46.1373 13.9828 46.3269 13.9401ZM43.8208 12.956C44.2239 12.6472 44.2139 12.3206 44.1469 11.8413C44.1067 11.5546 43.8922 11.352 43.8777 11.1295C43.834 10.865 43.7181 10.6173 43.5427 10.4134C43.2579 10.1521 42.9787 10.596 42.7441 10.793C42.6157 10.9037 42.2974 11.4118 42.275 11.5834C42.2427 11.8513 42.0584 11.7638 42.2058 12.2708C42.2996 12.594 42.7642 12.9693 43.0859 13.0778C43.1049 13.132 43.4667 13.1885 43.5706 13.1165C43.6331 13.0722 43.7336 13.0235 43.8208 12.9582V12.956ZM41.0722 13.6778C41.4787 13.5981 41.4017 13.0988 41.2207 12.8365C40.9639 12.4656 41.3123 12.0029 40.4624 11.5148C39.9632 11.2281 39.7387 10.9082 39.2227 11.5513C39.0999 11.7007 39.2116 12.6793 39.2116 12.9438C39.2116 13.2759 39.3154 13.1929 39.3076 13.5217C39.302 13.7519 39.6036 14.0663 39.789 14.1748C39.9922 14.2921 40.3217 14.3098 40.4769 14.0884C40.607 13.9136 40.7974 13.7923 41.0119 13.7475C41.0336 13.7264 41.0537 13.7038 41.0722 13.68V13.6778ZM43.336 20.1944C43.001 20.0184 42.5598 19.6752 42.1622 19.611C41.395 19.4859 41.1191 19.8324 40.1843 19.8324C39.2495 19.8324 39.4818 19.4084 39.1646 18.6446C39.0284 18.3126 38.8821 17.3163 39.1948 17.0595C39.7532 16.6112 40.3351 15.3426 41.0354 15.1511C41.2643 15.088 42.1366 14.5456 42.3264 14.2777C42.5308 13.9888 42.9418 13.8748 43.3617 13.8748C43.9514 13.8748 44.3669 14.1637 44.6829 14.8223C44.913 15.2983 45.047 15.7743 45.3843 16.3378C45.5898 16.6809 45.7305 17.1757 45.9874 17.5631C46.184 17.8598 46.5045 18.0524 46.6374 18.3137C46.9256 18.8738 46.5458 19.5313 46.2208 20.004C45.9517 20.3914 45.3397 20.6925 44.8728 20.6925C44.4529 20.6925 43.6097 20.3416 43.336 20.1966V20.1944ZM72.8117 7.66036C77.5784 7.66036 80.1214 10.317 80.1214 15.2175C80.1221 15.6438 80.096 16.0697 80.0432 16.4927H69.3216C69.7381 18.2716 71.343 19.5988 73.3198 19.7029C74.7159 19.7759 77.0523 19.6531 78.5802 18.628L79.3552 21.4508C77.8609 22.3363 75.9131 22.8444 73.6839 22.8444C68.6905 22.8444 65.5064 19.8047 65.5064 15.2186C65.502 11.0432 68.3745 7.66036 72.8117 7.66036ZM76.4973 13.9545C76.2538 11.869 75.3 10.6635 73.0228 10.6635C70.7232 10.6635 69.6164 12.1402 69.2869 13.9545H76.4973ZM26.5622 7.66036C31.3289 7.66036 33.8719 10.317 33.8719 15.2175C33.8729 15.6438 33.8464 16.0698 33.7926 16.4927H23.071C23.4876 18.2716 25.0925 19.5988 27.0682 19.7029C28.4653 19.7759 30.8017 19.6531 32.3285 18.628L33.1103 21.4508C31.6159 22.3363 29.667 22.8444 27.4389 22.8444C22.4456 22.8444 19.2603 19.8047 19.2603 15.2186C19.2514 11.0432 22.1239 7.66036 26.5622 7.66036ZM30.2478 13.9545C30.001 11.869 29.0483 10.6635 26.77 10.6635C24.4704 10.6635 23.3636 12.1402 23.0341 13.9545H30.2478ZM58.5776 15.9547L63.3554 4.01739H60.9475V0.58584H69.6912V4.01739H67.6519L59.6408 22.8433H57.3837L49.4083 4.01739H47.3645V0.58584H56.1071V4.01739H53.7997L58.5776 15.9547ZM92.3597 22.8433V20.4445C91.1245 21.6002 89.7463 22.3607 88.1816 22.3518C84.6669 22.3297 81.3622 19.6675 81.3622 15.4234C81.3622 10.8561 84.2504 7.62162 88.2006 7.70021C89.7553 7.73121 91.1435 8.07436 92.4915 9.22559V7.91386H98.1874V11.0034H96.0163V22.8477C96.0163 26.2538 94.0294 28.4932 91.0206 29.1164C88.5636 29.6289 82.6522 29.0743 82.5327 25.6085C82.5327 25.5742 82.5327 25.5387 82.5327 25.4978C82.5302 25.2097 82.5897 24.9243 82.7074 24.6609C82.8251 24.3974 82.9981 24.1619 83.215 23.97C83.4318 23.7782 83.6875 23.6344 83.9649 23.5483C84.2424 23.4622 84.5351 23.4358 84.8237 23.4708C85.1122 23.5058 85.3899 23.6015 85.6381 23.7514C85.8864 23.9013 86.0995 24.102 86.2632 24.3401C86.4269 24.5782 86.5375 24.8482 86.5875 25.132C86.6375 25.4158 86.6259 25.7069 86.5533 25.9859C90.9212 27.208 92.3597 24.8823 92.3597 22.8433ZM92.3597 17.7845V11.9575C88.6217 9.61303 85.1695 11.1517 85.1695 15.2518C85.1695 19.352 89.9317 20.3538 92.3597 17.7845ZM108.916 18.8915V16.6233C106.967 16.0699 102.938 15.8142 102.938 18.3303C102.938 20.9139 106.507 20.5929 108.916 18.8937V18.8915ZM108.916 14.7626V13.0545C108.949 10.9203 105.773 9.92851 104.032 10.7521C104.119 11.0305 104.145 11.3245 104.108 11.6138C104.07 11.9031 103.97 12.1809 103.814 12.4283C103.658 12.6756 103.45 12.8866 103.204 13.0468C102.958 13.2071 102.68 13.3128 102.389 13.3566C102.098 13.4005 101.801 13.3816 101.518 13.3011C101.235 13.2206 100.973 13.0805 100.75 12.8903C100.527 12.7002 100.348 12.4645 100.225 12.1993C100.102 11.9342 100.039 11.646 100.039 11.3543V11.2834C100.093 8.93114 102.849 7.698 106.05 7.698C110.011 7.698 112.38 9.57982 112.38 13.0512V19.5966H114.614V22.5743H108.918V21.0246C107.329 22.3529 105.036 23.0857 103.305 22.8311C100.953 22.4869 99.1981 21.3412 99.1981 18.6911C99.1981 16.2658 101.133 14.8389 103.577 14.4703C105.371 14.1936 107.947 14.4205 108.916 14.7648V14.7626Z"
@@ -456,16 +647,18 @@
                         </svg>
                         Alto Bônus de Boas-Vindas</p>
                     <p class="opportunity__paragraph text__paragraph">Nossa equipe escreve análises e reviews das
-                        melhores <span style="color: #0057FF;"> casas de apostas</span> para os apostadores brasileiros.
+                        melhores <a href="#" style="color: #0057FF;"> casas de apostas</a> para os apostadores
+                        brasileiros.
                         Saiba o que esperar de cada uma, prós
-                        e contras e o que podem oferecer a você em todos os aspectos. <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">REGISTRE-SE</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div>
+                        e contras e o que podem oferecer a você em todos os aspectos.
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">REGISTRE-SE</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
                     </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
-                    <p class="opportunity__text-l"><svg class="opportunities__logo"  width="7vw" height="41"
+                    <p class="opportunity__text-l"><svg class="opportunities__logo" width="7vw" height="41"
                             viewBox="0 0 139 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.00345 0C0.25185 0.0092517 0.50025 0.0264334 0.74865 0.0264334H137.313C137.543 0.0264334 137.773 0.0092517 138.003 0V0.396501C137.62 1.85034 137.223 3.28567 136.853 4.73819C134.652 13.5114 132.459 22.2869 130.273 31.0646C130.137 31.6091 129.884 31.6434 129.487 31.6434C119.484 31.6346 109.479 31.6346 99.4715 31.6434C74.8477 31.6434 50.2236 31.6465 25.599 31.6527C25.2581 31.6623 24.9223 31.75 24.6111 31.9104C19.0474 34.6903 13.4891 37.4791 7.93615 40.2766C7.8154 40.3361 7.6912 40.3876 7.49915 40.4749V31.6725C7.2197 31.658 6.9989 31.6368 6.77925 31.6368C4.72842 31.6368 2.67797 31.6368 0.6279 31.6368C0.4186 31.6368 0.2093 31.6091 0 31.5932L0.00345 0ZM134.688 2.96186H2.5484V28.8124H9.9728V36.001C10.2281 35.8807 10.4029 35.8041 10.5742 35.7195C15.0209 33.5167 19.4676 31.3174 23.9142 29.1217C24.3336 28.9217 24.7828 28.8176 25.2367 28.8151C59.3296 28.8019 93.4229 28.8019 127.517 28.8151C128.035 28.8151 128.27 28.6829 128.424 28.0644C129.998 21.6701 131.609 15.2891 133.208 8.90013C133.705 6.94142 134.189 4.97609 134.688 2.96186Z"
@@ -486,10 +679,11 @@
                         Bônus Das Casas De Apostas</p>
                     <p class="opportunity__paragraph text__paragraph">Os Bônus são pacotes oferecidos e dedicados aos
                         novos apostadores que se cadastram nas casas de apostas. Isso é uma oportunidade única para quem
-                        está começando, pois dá um boost ao seu jogo! <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">REGISTRE-SE</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div>
+                        está começando, pois dá um boost ao seu jogo!
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">REGISTRE-SE</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
                     </p>
                 </div>
             </div>
@@ -556,33 +750,36 @@
                     <p class="opportunity__paragraph text__paragraph">As máquinas caça-níqueis são um dos tipos mais
                         populares de jogos de cassino. E você pode se divertir jogando em mais de 1.000 slot machines
                         diferentes nos cassinos online!
-                        <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
                     </p>
-                   
+
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
                         Bingo</p>
                     <p class="opportunity__paragraph text__paragraph">Você pode jogar Bingo Online de 2 modos: ou nas
                         salas de Bingo, com as cartelas virtuais ou na versão vídeo, semelhante a uma máquina
-                        caça-níquel! <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
-                    
+                        caça-níquel!
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
+
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
                         Raspadinha</p>
                     <p class="opportunity__paragraph text__paragraph">A Raspadinha é um jogo apreciado pelos
                         brasileiros. Alguns cassinos online oferecem versões temáticas, coloridas e com bons Jackpots!
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
@@ -590,10 +787,11 @@
                     <p class="opportunity__paragraph text__paragraph">A Roleta é um dos jogos mais clássicos dos
                         cassinos online. Você pode jogar Roleta Europeia e Americana, e todas elas possuem versão ao
                         vivo, com um live dealer.
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
@@ -601,10 +799,11 @@
                     <p class="opportunity__paragraph text__paragraph">É fã do Poker? Grande parte dos cassinos online
                         conta com o Vídeo Poker, que pode ser jogado contra a máquina ou contra outras pessoas, em tempo
                         real.
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
@@ -612,10 +811,11 @@
                     <p class="opportunity__paragraph text__paragraph">Assim como o Poker, o Blackjack, também chamado de
                         21, é uma ótima opção para quem gosta de um carteado. E é um dos jogos mais rentáveis para os
                         apostadores!
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
@@ -623,10 +823,11 @@
                     <p class="opportunity__paragraph text__paragraph">O Keno é um jogo semelhante ao Bingo, mas com
                         regras próprias e com um alto nível de risco. Ou seja: é perfeito para quem quer a adrenalina de
                         apostar tudo ou nada.
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
@@ -635,10 +836,11 @@
                     <p class="opportunity__paragraph text__paragraph">O Pachinko é um jogo japonês, com várias versões.
                         Você ganha se acertar uma quantidade exata de números ou se acertar padrões de imagens nas
                         cartelas.
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
                 <div class="opportunity text__opportunity flex">
                     <p class="opportunity__text-l">
@@ -647,10 +849,11 @@
                     <p class="opportunity__paragraph text__paragraph">O famoso Jogo do Bicho tem uma versão online! A
                         versão em Vídeo, que pode jogar legalmente, é uma máquina caça-níquel com regras semelhante às
                         do Bicho tradicional.
-                   <div class="opportunity__more more">
-                            <p class="more__text more__text-blue">SAIBA MAIS</p>
-                            <img class="more__arrow" src="img/bluearrow.png">
-                        </div></p>
+                    <div class="opportunity__more more">
+                        <a href="#" class="more__text more__text-blue">SAIBA MAIS</a>
+                        <img class="more__arrow" src="img/bluearrow.png">
+                    </div>
+                    </p>
                 </div>
             </div>
             <div class="opportunities__tittle tittle">
@@ -658,7 +861,8 @@
                     <h2 class="tittle__2">Jogos De<br> <span style="color: #0057FF;">Cassino Ao Vivo</span>
                     </h2>
                 </div>
-                <svg class="crosses__none" width="20vw" height="auto" viewBox="0 0 551 641" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="crosses__none" width="20vw" height="auto" viewBox="0 0 551 641" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_127_10696)">
                         <path
                             d="M37.6199 290.065C34.7105 293.216 30.9321 295.434 26.7626 296.437C22.5931 297.441 18.2196 297.185 14.1952 295.703C10.1707 294.221 6.67611 291.579 4.15314 288.111C1.63017 284.643 0.192163 280.504 0.0209542 276.219C-0.150255 271.933 0.953019 267.693 3.19127 264.035C5.42953 260.377 8.70224 257.464 12.5956 255.666C16.489 253.867 20.8281 253.264 25.0644 253.931C29.3008 254.599 33.2439 256.508 36.3954 259.417C40.6181 263.321 43.1188 268.741 43.3484 274.488C43.578 280.234 41.5176 285.837 37.6199 290.065Z"
@@ -713,7 +917,8 @@
                 com um live dealer (crupiê) guiando os apostadores online. Os melhores jogos são da Evolution Gaming.
                 Mas sites como a LeoVegas e Betfair tem as suas próprias versões!<br><br>
 
-                Os <span style="color: #0057FF;">Cassinos ao Vivo</span> são uma opção bastante interessante para quem
+                Os <a href="#" style="color: #0057FF;">Cassinos ao Vivo</a> são uma opção bastante interessante para
+                quem
                 busca, acima de tudo, emoção.<span style="font-weight: bold;"> Jogar
                     contra um crupiê em tempo real</span>, com todos os efeitos sonoros e visuais de um cassino de
                 verdade, é muito
@@ -731,7 +936,8 @@
         </section>
         <section class="info">
             <p class="text__paragraph">O Brasil deu um grande passo para a legalização dos cassinos e jogos de azar. Em
-                fevereiro de 2022 foi <span style="color: #0057FF;">aprovada pela Câmara a A PL 442/91,</span> que é o
+                fevereiro de 2022 foi <a href="#" style="color: #0057FF;">aprovada pela Câmara a A PL 442/91,</a> que é
+                o
                 Marco Regulatório dos Jogos.<br><br>
 
                 O texto prevê a legalização dos jogos de azar no Brasil. Mas ainda precisa ser aprovado pelo Senado e
@@ -761,27 +967,27 @@
                     Cassinos No Brasil?
                 </h2>
             </div>
-        </div>  
+        </div>
         </section>
         <section class="info">
             <svg class="lines lines__side lines__side-right " style="top: -20vw; left:64vw;" width="40vw" height="146"
-            viewBox="0 0 835 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M622.281 72.4159L725.733 145.328C726.347 145.762 727.08 145.996 727.832 145.996C728.584 145.996 729.317 145.762 729.931 145.328L833.432 72.4841C834.222 71.9277 834.759 71.0803 834.925 70.1282C835.09 69.1762 834.87 68.1975 834.313 67.4075C833.757 66.6174 832.909 66.0808 831.956 65.9156C831.003 65.7504 830.024 65.9701 829.234 66.5265L727.837 137.901L626.479 66.4583C625.688 65.902 624.709 65.6822 623.757 65.8474C622.804 66.0126 621.956 66.5493 621.399 67.3393C620.843 68.1293 620.623 69.108 620.788 70.0601C620.953 71.0121 621.49 71.8596 622.281 72.4159Z"
-                fill="#040218" />
-            <path
-                d="M208.443 72.2796L311.876 145.202C312.49 145.635 313.223 145.867 313.975 145.867C314.726 145.867 315.46 145.635 316.074 145.202L417.461 73.8274L518.761 145.27C519.551 145.826 520.53 146.046 521.483 145.881C522.435 145.716 523.283 145.179 523.84 144.389C524.397 143.599 524.617 142.62 524.451 141.668C524.286 140.716 523.749 139.869 522.959 139.312L419.565 66.3902C418.949 65.9579 418.214 65.726 417.461 65.726C416.708 65.726 415.973 65.9579 415.357 66.3902L313.98 137.765L212.68 66.3318C212.289 66.0537 211.848 65.8553 211.38 65.7479C210.913 65.6405 210.429 65.6261 209.956 65.7057C209.483 65.7852 209.03 65.9571 208.623 66.2115C208.217 66.4659 207.864 66.7979 207.586 67.1884C207.308 67.579 207.109 68.0205 207.002 68.4877C206.894 68.9549 206.88 69.4387 206.96 69.9114C207.039 70.3842 207.211 70.8367 207.466 71.243C207.72 71.6493 208.052 72.0016 208.443 72.2796Z"
-                fill="#040218" />
-            <path
-                d="M1.54869 72.2115L104.972 145.134C105.763 145.636 106.718 145.815 107.638 145.634C108.558 145.452 109.373 144.923 109.914 144.158C110.455 143.392 110.681 142.447 110.544 141.52C110.407 140.592 109.918 139.753 109.179 139.176L5.74678 66.2636C5.35683 65.9724 4.91244 65.7622 4.43984 65.6455C3.96724 65.5288 3.47603 65.5079 2.99523 65.5841C2.51443 65.6604 2.0538 65.8321 1.64054 66.0893C1.22729 66.3464 0.869794 66.6838 0.589186 67.0813C0.308578 67.4789 0.110547 67.9286 0.00679392 68.404C-0.0969593 68.8793 -0.10433 69.3707 -0.0148836 69.8489C0.0745631 70.3271 0.259013 70.7826 0.527568 71.1884C0.796124 71.5942 1.14334 71.9421 1.54869 72.2115Z"
-                fill="#040218" />
-            <path
-                d="M523.056 79.678L624.404 8.30364L725.752 79.7364C726.366 80.1705 727.1 80.4037 727.851 80.4037C728.603 80.4037 729.337 80.1705 729.95 79.7364L833.451 6.89212C834.148 6.30324 834.598 5.47461 834.713 4.57006C834.827 3.66551 834.598 2.7509 834.07 2.00706C833.543 1.26323 832.755 0.744314 831.863 0.552925C830.971 0.361537 830.04 0.511607 829.253 0.973463L727.856 72.3088L626.508 0.866382C625.892 0.434089 625.157 0.20215 624.404 0.20215C623.651 0.20215 622.917 0.434089 622.3 0.866382L518.819 73.7204C518.428 73.9984 518.095 74.3508 517.84 74.7574C517.584 75.1639 517.412 75.6168 517.332 76.09C517.252 76.5632 517.266 77.0475 517.373 77.5153C517.48 77.9831 517.679 78.4253 517.957 78.8164C518.519 79.6065 519.372 80.1411 520.328 80.3026C520.801 80.3826 521.286 80.3686 521.754 80.2615C522.222 80.1543 522.665 79.956 523.056 79.678Z"
-                fill="#0057FF" />
-            <path
-                d="M1.56819 6.61955L105.001 79.5417C105.615 79.9745 106.348 80.2068 107.1 80.2068C107.851 80.2068 108.585 79.9745 109.199 79.5417L210.567 8.16736L311.866 79.6001C312.481 80.0351 313.216 80.2687 313.97 80.2687C314.724 80.2687 315.459 80.0351 316.074 79.6001L419.584 6.75583C420.375 6.19946 420.912 5.35204 421.077 4.39999C421.242 3.44794 421.023 2.46925 420.466 1.67922C419.909 0.889198 419.061 0.352548 418.109 0.187331C417.156 0.0221146 416.177 0.241865 415.386 0.798239L313.999 72.1726L212.67 0.730097C212.054 0.297804 211.32 0.0658657 210.567 0.0658657C209.814 0.0658657 209.079 0.297804 208.463 0.730097L107.144 72.1044L5.76628 0.661955C5.37487 0.386466 4.933 0.190724 4.46589 0.0859038C3.99879 -0.018916 3.5156 -0.0307606 3.04392 0.0510463C2.57224 0.132853 2.1213 0.30671 1.71684 0.562689C1.31239 0.818668 0.962344 1.15176 0.686693 1.54294C0.129993 2.33296 -0.0898862 3.31165 0.0754272 4.2637C0.240741 5.21575 0.777705 6.06317 1.56819 6.61955Z"
-                fill="#0057FF" />
-        </svg>
+                viewBox="0 0 835 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M622.281 72.4159L725.733 145.328C726.347 145.762 727.08 145.996 727.832 145.996C728.584 145.996 729.317 145.762 729.931 145.328L833.432 72.4841C834.222 71.9277 834.759 71.0803 834.925 70.1282C835.09 69.1762 834.87 68.1975 834.313 67.4075C833.757 66.6174 832.909 66.0808 831.956 65.9156C831.003 65.7504 830.024 65.9701 829.234 66.5265L727.837 137.901L626.479 66.4583C625.688 65.902 624.709 65.6822 623.757 65.8474C622.804 66.0126 621.956 66.5493 621.399 67.3393C620.843 68.1293 620.623 69.108 620.788 70.0601C620.953 71.0121 621.49 71.8596 622.281 72.4159Z"
+                    fill="#040218" />
+                <path
+                    d="M208.443 72.2796L311.876 145.202C312.49 145.635 313.223 145.867 313.975 145.867C314.726 145.867 315.46 145.635 316.074 145.202L417.461 73.8274L518.761 145.27C519.551 145.826 520.53 146.046 521.483 145.881C522.435 145.716 523.283 145.179 523.84 144.389C524.397 143.599 524.617 142.62 524.451 141.668C524.286 140.716 523.749 139.869 522.959 139.312L419.565 66.3902C418.949 65.9579 418.214 65.726 417.461 65.726C416.708 65.726 415.973 65.9579 415.357 66.3902L313.98 137.765L212.68 66.3318C212.289 66.0537 211.848 65.8553 211.38 65.7479C210.913 65.6405 210.429 65.6261 209.956 65.7057C209.483 65.7852 209.03 65.9571 208.623 66.2115C208.217 66.4659 207.864 66.7979 207.586 67.1884C207.308 67.579 207.109 68.0205 207.002 68.4877C206.894 68.9549 206.88 69.4387 206.96 69.9114C207.039 70.3842 207.211 70.8367 207.466 71.243C207.72 71.6493 208.052 72.0016 208.443 72.2796Z"
+                    fill="#040218" />
+                <path
+                    d="M1.54869 72.2115L104.972 145.134C105.763 145.636 106.718 145.815 107.638 145.634C108.558 145.452 109.373 144.923 109.914 144.158C110.455 143.392 110.681 142.447 110.544 141.52C110.407 140.592 109.918 139.753 109.179 139.176L5.74678 66.2636C5.35683 65.9724 4.91244 65.7622 4.43984 65.6455C3.96724 65.5288 3.47603 65.5079 2.99523 65.5841C2.51443 65.6604 2.0538 65.8321 1.64054 66.0893C1.22729 66.3464 0.869794 66.6838 0.589186 67.0813C0.308578 67.4789 0.110547 67.9286 0.00679392 68.404C-0.0969593 68.8793 -0.10433 69.3707 -0.0148836 69.8489C0.0745631 70.3271 0.259013 70.7826 0.527568 71.1884C0.796124 71.5942 1.14334 71.9421 1.54869 72.2115Z"
+                    fill="#040218" />
+                <path
+                    d="M523.056 79.678L624.404 8.30364L725.752 79.7364C726.366 80.1705 727.1 80.4037 727.851 80.4037C728.603 80.4037 729.337 80.1705 729.95 79.7364L833.451 6.89212C834.148 6.30324 834.598 5.47461 834.713 4.57006C834.827 3.66551 834.598 2.7509 834.07 2.00706C833.543 1.26323 832.755 0.744314 831.863 0.552925C830.971 0.361537 830.04 0.511607 829.253 0.973463L727.856 72.3088L626.508 0.866382C625.892 0.434089 625.157 0.20215 624.404 0.20215C623.651 0.20215 622.917 0.434089 622.3 0.866382L518.819 73.7204C518.428 73.9984 518.095 74.3508 517.84 74.7574C517.584 75.1639 517.412 75.6168 517.332 76.09C517.252 76.5632 517.266 77.0475 517.373 77.5153C517.48 77.9831 517.679 78.4253 517.957 78.8164C518.519 79.6065 519.372 80.1411 520.328 80.3026C520.801 80.3826 521.286 80.3686 521.754 80.2615C522.222 80.1543 522.665 79.956 523.056 79.678Z"
+                    fill="#0057FF" />
+                <path
+                    d="M1.56819 6.61955L105.001 79.5417C105.615 79.9745 106.348 80.2068 107.1 80.2068C107.851 80.2068 108.585 79.9745 109.199 79.5417L210.567 8.16736L311.866 79.6001C312.481 80.0351 313.216 80.2687 313.97 80.2687C314.724 80.2687 315.459 80.0351 316.074 79.6001L419.584 6.75583C420.375 6.19946 420.912 5.35204 421.077 4.39999C421.242 3.44794 421.023 2.46925 420.466 1.67922C419.909 0.889198 419.061 0.352548 418.109 0.187331C417.156 0.0221146 416.177 0.241865 415.386 0.798239L313.999 72.1726L212.67 0.730097C212.054 0.297804 211.32 0.0658657 210.567 0.0658657C209.814 0.0658657 209.079 0.297804 208.463 0.730097L107.144 72.1044L5.76628 0.661955C5.37487 0.386466 4.933 0.190724 4.46589 0.0859038C3.99879 -0.018916 3.5156 -0.0307606 3.04392 0.0510463C2.57224 0.132853 2.1213 0.30671 1.71684 0.562689C1.31239 0.818668 0.962344 1.15176 0.686693 1.54294C0.129993 2.33296 -0.0898862 3.31165 0.0754272 4.2637C0.240741 5.21575 0.777705 6.06317 1.56819 6.61955Z"
+                    fill="#0057FF" />
+            </svg>
             <div class="info__text text">
                 <div class="benefit text__benefit">
                     <img class="checkmark info__checkmark" src="img/checkmark.png">
@@ -847,274 +1053,465 @@
                 <img class="element__image" src="img/list.png">
                 <p class="element__text element-extra">Ordenar por:</p>
             </div>
-            <div class="banner__element element">
+            <div id="popular" class="banner__element element banner__element-click">
 
                 <img class="element__image" src="img/heart.png">
-                <p class="element__text">Mais populares</p>
+                <p  class="element__text  filter__button-js-2">Mais populares</p>
             </div>
-            <div class="banner__element element">
+            <div class="banner__element element banner__element-click">
                 <img class="element__image" src="img/clock.png">
-                <p class="element__text">Novas</p>
+                <p  class="element__text filter__button-js-2">Novas</p>
             </div>
-            <div class="banner__element element">
+            <div class="banner__element element banner__element-click">
                 <img class="element__image" src="img/bonus.png">
-                <p class="element__text">Bônus</p>
+                <p class="element__text filter__button-js-2">Bônus</p>
             </div>
         </div>
-        <div class="offers">
-            <a href="offer.html" class="offer">
-                <div class="offer__element-best">Melhor Casa</div>
-                <div class="offer__element offer__element-image">
-                    <img class="offer__image" src="img/offerimage.webp">
-                </div>
-                <div class="offer__element offer__element-info">
-                    <p class="offer__name">Betano</p>
-                    <p class="offer__rating">5/5</p>
-                    <div class=" offer__checkbox">
-                        <input class="checkbox" type="checkbox">
-                        <p class="offer__compare">Comparar</p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__benefits">
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Bet Menor</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Super Odds</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Aposta Grátis de R$20 </p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__last">
-                    <div class="offer__payment">
-                        <p class="payment__text">Métodos de Pagamento
-                        </p>
-                        <img class="method payment__method payment__method-visa" src="img/visa.png">
-                        <p class="payment__qualiti">4+</p>
-                    </div>
-                    <div class="flex__none">
-                        <div class="offer__prize"><img class="prize" src="img/prize.png">
-                            <p class="prize__text">R$300</p>
-                        </div>
-                        <div class="get__bonus">
-                            <p class="get__bonus-text">Ganhar bônus</p>
-                        </div>
-                    </div>
-                    <button class="button button__open button__none">abrir<img class="arrow"
-                            src="img/arrow.png"></button>
-                    <button class="button button__analize button__none">análise</button>
-                </div>
-                <div class="flex__block">
-                    <div class="offer__prize"><img class="prize" src="img/prize.png">
-                        <p class="prize__text">R$300</p>
-                    </div>
-                    <div class="get__bonus">
-                        <p class="get__bonus-text">Ganhar bônus</p>
-                    </div>
-                </div>
-                <div class="button__block">
-                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
-                    <button class="button button__analize ">análise</button>
-                </div>
-            </a>
-            <a href="offer.html" class="offer">
-                <div class="offer__element-best">Melhor Casa</div>
-                <div class="offer__element offer__element-image">
-                    <img class="offer__image" src="img/offerimage.webp">
-                </div>
-                <div class="offer__element offer__element-info">
-                    <p class="offer__name">Betano</p>
-                    <p class="offer__rating">5/5</p>
-                    <div class=" offer__checkbox">
-                        <input class="checkbox" type="checkbox">
-                        <p class="offer__compare">Comparar</p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__benefits">
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Bet Menor</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Super Odds</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Aposta Grátis de R$20 </p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__last">
-                    <div class="offer__payment">
-                        <p class="payment__text">Métodos de Pagamento
-                        </p>
-                        <img class="method payment__method payment__method-visa" src="img/visa.png">
-                        <p class="payment__qualiti">4+</p>
-                    </div>
-                    <div class="flex__none">
-                        <div class="offer__prize"><img class="prize" src="img/prize.png">
-                            <p class="prize__text">R$300</p>
-                        </div>
-                        <div class="get__bonus">
-                            <p class="get__bonus-text">Ganhar bônus</p>
-                        </div>
-                    </div>
-                    <button class="button button__open button__none">abrir<img class="arrow"
-                            src="img/arrow.png"></button>
-                    <button class="button button__analize button__none">análise</button>
-                </div>
-                <div class="flex__block">
-                    <div class="offer__prize"><img class="prize" src="img/prize.png">
-                        <p class="prize__text">R$300</p>
-                    </div>
-                    <div class="get__bonus">
-                        <p class="get__bonus-text">Ganhar bônus</p>
-                    </div>
-                </div>
-                <div class="button__block">
-                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
-                    <button class="button button__analize ">análise</button>
-                </div>
-            </a>
-            <a href="offer.html" class="offer">
-                <div class="offer__element-best">Melhor Casa</div>
-                <div class="offer__element offer__element-image">
-                    <img class="offer__image" src="img/offerimage.webp">
-                </div>
-                <div class="offer__element offer__element-info">
-                    <p class="offer__name">Betano</p>
-                    <p class="offer__rating">5/5</p>
-                    <div class=" offer__checkbox">
-                        <input class="checkbox" type="checkbox">
-                        <p class="offer__compare">Comparar</p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__benefits">
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Bet Menor</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Super Odds</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Aposta Grátis de R$20 </p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__last">
-                    <div class="offer__payment">
-                        <p class="payment__text">Métodos de Pagamento
-                        </p>
-                        <img class="method payment__method payment__method-visa" src="img/visa.png">
-                        <p class="payment__qualiti">4+</p>
-                    </div>
-                    <div class="flex__none">
-                        <div class="offer__prize"><img class="prize" src="img/prize.png">
-                            <p class="prize__text">R$300</p>
-                        </div>
-                        <div class="get__bonus">
-                            <p class="get__bonus-text">Ganhar bônus</p>
-                        </div>
-                    </div>
-                    <button class="button button__open button__none">abrir<img class="arrow"
-                            src="img/arrow.png"></button>
-                    <button class="button button__analize button__none">análise</button>
-                </div>
-                <div class="flex__block">
-                    <div class="offer__prize"><img class="prize" src="img/prize.png">
-                        <p class="prize__text">R$300</p>
-                    </div>
-                    <div class="get__bonus">
-                        <p class="get__bonus-text">Ganhar bônus</p>
-                    </div>
-                </div>
-                <div class="button__block">
-                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
-                    <button class="button button__analize ">análise</button>
-                </div>
-            </a>
-            <a href="offer.html" class="offer">
-                <div class="offer__element-best">Melhor Casa</div>
-                <div class="offer__element offer__element-image">
-                    <img class="offer__image" src="img/offerimage.webp">
-                </div>
-                <div class="offer__element offer__element-info">
-                    <p class="offer__name">Betano</p>
-                    <p class="offer__rating">5/5</p>
-                    <div class=" offer__checkbox">
-                        <input class="checkbox" type="checkbox">
-                        <p class="offer__compare">Comparar</p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__benefits">
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Bet Menor</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Super Odds</p>
-                    </div>
-                    <div class="benefit offer__benefit">
-                        <img class="checkmark benefit__checkmark" src="img/checkmark.png">
-                        <p class="benefit-text">Aposta Grátis de R$20 </p>
-                    </div>
-                </div>
-                <div class="offer__element line offer__line"></div>
-                <div class="offer__element offer__last">
-                    <div class="offer__payment">
-                        <p class="payment__text">Métodos de Pagamento
-                        </p>
-                        <img class="method payment__method payment__method-visa" src="img/visa.png">
-                        <p class="payment__qualiti">4+</p>
-                    </div>
-                    <div class="flex__none">
-                        <div class="offer__prize"><img class="prize" src="img/prize.png">
-                            <p class="prize__text">R$300</p>
-                        </div>
-                        <div class="get__bonus">
-                            <p class="get__bonus-text">Ganhar bônus</p>
-                        </div>
-                    </div>
-                    <button class="button button__open button__none">abrir<img class="arrow"
-                            src="img/arrow.png"></button>
-                    <button class="button button__analize button__none">análise</button>
-                </div>
-                <div class="flex__block">
-                    <div class="offer__prize"><img class="prize" src="img/prize.png">
-                        <p class="prize__text">R$300</p>
-                    </div>
-                    <div class="get__bonus">
-                        <p class="get__bonus-text">Ganhar bônus</p>
-                    </div>
-                </div>
-                <div class="button__block">
-                    <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
-                    <button class="button button__analize ">análise</button>
-                </div>
-            </a>
+    </div>
 
-        </div>
+    <div class=" offers-2 active">
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a>
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a>
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a>
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a>
+
+    </div>
+    <div class=" offers-2">
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a>
+
+    </div>
+    <div class="offers-2">
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a>
+        <a href="offer.html" class="offer">
+            <div class="offer__element-best">Melhor Casa</div>
+            <div class="offer__element offer__element-image">
+                <img class="offer__image" src="img/offerimage.webp">
+            </div>
+            <div class="offer__element offer__element-info">
+                <p class="offer__name">Betano</p>
+                <p class="offer__rating">5/5</p>
+                <div class=" offer__checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <p class="offer__compare">Comparar</p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__benefits">
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Bet Menor</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Super Odds</p>
+                </div>
+                <div class="benefit offer__benefit">
+                    <img class="checkmark benefit__checkmark" src="img/checkmark.png">
+                    <p class="benefit-text">Aposta Grátis de R$20 </p>
+                </div>
+            </div>
+            <div class="offer__element line offer__line"></div>
+            <div class="offer__element offer__last">
+                <div class="offer__payment">
+                    <p class="payment__text">Métodos de Pagamento
+                    </p>
+                    <img class="method payment__method payment__method-visa" src="img/visa.png">
+                    <p class="payment__qualiti">4+</p>
+                </div>
+                <div class="flex__none">
+                    <div class="offer__prize"><img class="prize" src="img/prize.png">
+                        <p class="prize__text">R$300</p>
+                    </div>
+                    <div class="get__bonus">
+                        <p class="get__bonus-text">Ganhar bônus</p>
+                    </div>
+                </div>
+                <button class="button button__open button__none">abrir<img class="arrow"
+                        src="img/arrow.png"></button>
+                <button class="button button__analize button__none">análise</button>
+            </div>
+            <div class="flex__block">
+                <div class="offer__prize"><img class="prize" src="img/prize.png">
+                    <p class="prize__text">R$300</p>
+                </div>
+                <div class="get__bonus">
+                    <p class="get__bonus-text">Ganhar bônus</p>
+                </div>
+            </div>
+            <div class="button__block">
+                <button class="button button__open">abrir<img class="arrow" src="img/arrow.png"></button>
+                <button class="button button__analize ">análise</button>
+            </div>
+        </a> 
+    </div>
         <section class="opportunities">
 
             <div class="opportunities__tittle tittle">
                 <div class="tittle__container">
                     <h2 class="tittle__2 tittle__2-orange">Dúvidas Frequentes</h2>
                 </div>
-                <svg class="crosses__none" width="25vw" height="auto" viewBox="0 0 400 445" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="crosses__none" width="25vw" height="auto" viewBox="0 0 400 445" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_127_10024)">
                         <path
                             d="M286.094 443.224C386.994 429.098 457.337 335.85 443.211 234.95C429.084 134.051 335.837 63.7071 234.937 77.8337C134.037 91.9604 63.6934 185.208 77.8201 286.108C91.9467 387.007 185.194 457.351 286.094 443.224Z"
@@ -1288,5 +1685,6 @@
         </div>
     </footer>
 </body>
+<script src="filters.js"></script>
 
 </html>
