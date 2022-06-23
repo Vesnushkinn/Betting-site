@@ -98,7 +98,7 @@ a {
 
 .banner__block-guias {
     background-image: url(img/bannerguias.jpg);
-    height: 30vw;
+    height: 40vw;
 }
 
 .banner__text {
@@ -350,7 +350,7 @@ a {
 .offer__rating::before {
     content: url(img/star.png) url(img/star.png) url(img/star.png) url(img/star.png) url(img/star.png);
     display: block;
-    transform: scale(1.1);
+    transform: scale(1);
     margin-right: 1vw;
 }
 
@@ -986,10 +986,14 @@ a {
 
 .main-offer {
     position: relative;
+    display: flex;
 }
 
 .anchor {
-    position: fixed;
+    position: sticky;
+    top: 3vw;
+    margin-top: 3vw;
+    align-self: flex-start;
 }
 
 .body-blue {
@@ -1045,11 +1049,19 @@ a {
     color: #040218;
 }
 
+.active__link {
+    color: rgba(0, 87, 255, 1);
+}
+.active__link-orange {
+    color: rgba(254, 171, 65, 1);
+}
+
 .main__page {
     width: 60%;
     margin: auto;
     margin-top: 3vw;
     background-color: white;
+    margin-left: 3vw;
 }
 
 .page__header {
@@ -1209,7 +1221,6 @@ a {
 .prize__text-white {
     color: white;
     font-weight: 600;
-    font-size: 1vw;
 }
 
 .offer__prize-orange {
@@ -1289,14 +1300,15 @@ a {
 .lines__side-halfup {
     transform: rotate(0deg);
     top: 0%;
-    left: 65%;
+    left: 70%;
+    max-width: 34vw;
 }
 
 .lines__side-halfdown {
     transform: rotate(0deg);
-    top: 36%;
-    left: 64%;
-    max-width: 40vw;
+    top: 39%;
+    left: 76%;
+    max-width: 31vw;
 }
 
 .plus {
@@ -1394,7 +1406,8 @@ a {
 }
 
 .lines__side-tittle {
-    left: 39vw;
+    left: 41vw;
+    max-width: 35vw;
 }
 
 .page__text-margin {
@@ -1564,7 +1577,7 @@ textarea:focus {
 }
 
 .dots__page-comment {
-    top: -5vw;
+    top: -6vw;
 }
 
 .element-page {
@@ -1642,6 +1655,18 @@ textarea:focus {
     color: rgba(254, 171, 65, 1);
     transition: color 0.2s ease-in-out;
     cursor: pointer;
+}
+
+.bonuses__element:hover {
+    cursor: pointer;
+    color: rgba(254, 171, 65, 1);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.element-extra :hover {
+    color: white;
+    cursor: default;
 }
 
 @media only screen and (max-width: 1230px) {
