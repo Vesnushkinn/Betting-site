@@ -14,8 +14,10 @@
 </head>
 
 <body class="body body-blue">
-    <header class="header header__container">
-        <div class="logo header__logo"></div>
+    <header class="header header__container header__container-js">
+        <a href="index.html">
+            <div class="logo header__logo">LOGO</div>
+        </a>
         <menu class="header__menu menu">
             <nav class="navigation menu__navigation">
                 <ul class="navigation__list">
@@ -27,7 +29,21 @@
                 </ul>
             </nav>
         </menu>
+        <img class="menu__button" src="img/menu.png">
     </header>
+    <section class="menu__humburger menu header__container-js">
+        <nav class="navigation menu__navigation  menu__navigation-burger">
+            <img class="menu__button menu__button-burger" src="img/menu__crosses.png">
+            <ul class="navigation__list navigation__list-burger">
+                <li><a class="navigation__list-item navigation__list-item-white" href="index.html">SITES DE APOSTAS</a>
+                </li>
+                <li><a class="navigation__list-item navigation__list-item-white" href="/bonus.html">BÔNUS DE
+                        CADASTRO</a></li>
+                <li><a class="navigation__list-item navigation__list-item-white" href="/casino.html"> CASSINOS</a></li>
+                <li><a class="navigation__list-item navigation__list-item-white" href="guias.html">GUIAS</a></li>
+            </ul>
+        </nav>
+    </section>
 
     <main class="main main-offer">
         <section class="anchor main__anchor">
@@ -52,16 +68,26 @@
                         class="arrow" src="img/arrow.png"></button>
             </div>
             <ul class="anchor__list">
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-1">1. Bônus Betano</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-2">2. Betano é Confiável?</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-3">3. Como Funciona a Betano?</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-4">4. Apostas Esportivas</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-5">5. Ferramentas de Apostas</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-6">6. Betano Cassino</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-7">7. Betano App</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-8">8. Métodos de Pagamento</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-9">9. Suporte ao Cliente</a></li>
-                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-10">10. Por Que Apostar na Betano?</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-1">1. Bônus
+                        Betano</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-2">2. Betano é
+                        Confiável?</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-3">3. Como Funciona
+                        a Betano?</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-4">4. Apostas
+                        Esportivas</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-5">5. Ferramentas
+                        de Apostas</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-6">6. Betano
+                        Cassino</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-7">7. Betano
+                        App</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-8">8. Métodos de
+                        Pagamento</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-9">9. Suporte ao
+                        Cliente</a></li>
+                <li class="anchor__list-element"><a class="anchor__list-element-link" href="#section-10">10. Por Que
+                        Apostar na Betano?</a></li>
             </ul>
         </section>
         <section class="main__page page">
@@ -1870,8 +1896,41 @@
                     </div>
                 </div>
                 <div class="reply">
-                    <a href="#" class="reply__text">RESPOSTA</a>
+                    <a class="reply__text">RESPOSTA</a>
                 </div>
+                <section class="form form2">
+                    <form class="form__container" action="/my-handling-form-page" method="post">
+                        <div>
+                            <input class="form__input" placeholder="Nome" type="text" id="name" name="user_name">
+                        </div>
+
+                        <div>
+                            <input class="form__input" placeholder="E-mail" type="email" id="mail" name="user_email">
+                        </div>
+
+                        <div>
+                            <textarea class="form__input form__input-heihgt" placeholder="Escrever um Comentário"
+                                id="msg" name="user_message"></textarea>
+                        </div>
+
+
+                        <button class="button button__open button__open-anchor form__button">PUBLICAR <svg class="arrow"
+                                width="1.4vw" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_127_17519" transform="scale(0.01)" />
+                                    </pattern>
+                                    <image id="image0_127_17519" width="100" height="100"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAFFklEQVR4nO2cW4hVVRjHf5+pmVKGRVqaFamgZheKyDIyu5M3qKeoiIyEgiAkip567FVKAutJKCIIqYagh6zMSxlFSQUSUwM5GBWMBjOjVv57OGfyFHP22Ze199rnnO8HhxlY+6z13/PjW3vt24DjOI7jOI7jOI7jOI7jOE4OLHaA2Eg6E9gErAR+Brab2VDcVH2KpLMk7dd/OSbp1tjZ+hJJT2pyRl1KBCTtaCMkmpQpVQ9YM2YktM0EBiTdVlUYcCGdmAm8W6UUF9KZSqW4kHRUJsWFpKcSKS4kG6VLcSHZKVWKC8lHaVJcSH4mpKwJ2akLKcZM4L2QUlxIcYJKcSFhCCbFhYQjiJSevEElaS5wGXAxsAC4BJgHzAHOaX5mA+cD0wMPPwasNbOP8ny5q4VImgJcAdwArGj+vgI4L2YuCkjpOiGSrgbuAm4GbgLOjZuoLWPAvWb2cZYv1V6IpDOANcD65mdh3ESZyCyltkIkLQEeAB6hcQzoVsaAdWa2K83GtRIiyYC1wBbglshxQpK6UmohRNJU4CHgGWBp5DhlkUpKdCGS1gMv0rsiWhkD7jSzve02iCZE0nJgG701NaVhCFhmZuOTNVZ+pi5pmqRngS/pPxkAlwLXtmucWmEQJF0JvEl/TE9JqF1DZRUiaTPwGS5jCPiqXWPpFdJ8mHk78HDZY3UBY8CD7Y4fULIQSXOAt4HVZY7TJUycILZdYUGJqyxJC4APgSVljdFFpD4xLKVCJC0EdgGXl9F/lzFRGamuZwWvkGZl7KG7rz+FIvPFxaCrLEmzgQFcBmSsjAmCTVnN1dQAcFWoPruY3DeoQlbIS8CqgP11KxOVEe8WrqTHgFdD9BWAE8CPwGDzcwQ4Chxr/mz9/RVgQ8CxC91PhwBTlqSlwNai/eTgL+AgsA/4htMCDpvZqTQdSDoZME9hGVBQiKTpwOs0HoEpmxFgL7CfhoQvzGy0gnHTEEQGFK+Q54BrioZIYBDYSWOxsMfM/i5xrLwEk1EISYsljSe8xZqXEUnbJK2sYB/eKpg1+Ju6RSpkK8lvsWblaxo3rN4ws7GA/ZZFPSoDQNKqomXQwj5J69R4wKHq/chbIaMK/BpCISTtDiDie0n3RN6PPELq9V8eJN1dUMQfkp5S40mT2PuSVUjtZJikzwvI2C1pUez9mCCjkHpNUwCS7sgp4k9JL6jxcHRtyCCkMhlZp43Hc4zxK3C/mX2a47t1oD6rqVYkzZN0MmNlDEpaHDt7O1JUSOXTVJYK2QRMy7D9QeB2M/stW6RKOZ7QVs/KgH8P5j9lqIzvJF0QO3cnJD2RUBn1WU39H0nXZZAxLGl+7MxpkDRDjRPTVo7GlJF2ytqYcrtxYKOZDefMUylmdrz5x38UuB4YBl6r/T/BlPRtyurYHDtrzyNpUUoZ7yvC9ai+Q+0PfK38LunC2Fl7gTRnzjem2OZ5MztSNIyTAklDHarjkGpwobAvkDQ/xXR1X+ycfYOkDR1k/CA/kAel0zFkeYf2l82s7dtATnaKCBkHdgTM4tBZyLKEtg/MbCRkGKezkKSn2N8JGcTpgKRZHQ7o82Jn7EWSKuSihLZBM/sldBgnWcjshLYDoYM4DZKEzEpoOxQ6iNMgScjZCW2HQwdxGiQJSXrS3C8kVo2kuZJOTLK6OqEuuF/ek0jaIulUi4xTkp6OnauX6XhhUNJqTt9T32lmn5QbyXEcx3Ecx3Ecx3Ecx3Ecx8nMPxw84cVZ78bfAAAAAElFTkSuQmCC" />
+                                </defs>
+                            </svg>
+
+                        </button>
+
+
+                    </form>
             </div>
 
             <section class="opportunities">
@@ -1936,15 +1995,6 @@
 
                 </div>
                 <div class="bonuses__flex flex bonuses__flex-page">
-                    <a href="#" class="bonus bonuses__bonus bonuses__bonus-width">
-                        <p class="bonus__date">7 MAIO 2022</p>
-                        <img class="bonus__image" src="img/bonus.jpg">
-                        <p class="bonus__text">Bônus Sem Depósito | 7 Sites Com Bônus Grátis (2022)</p>
-                        <div class="bonus__more more">
-                            <p class="more__text">LER MAIS</p>
-                            <img class="more__arrow" src="img/orangearrow.png">
-                        </div>
-                    </a>
                     <a href="#" class="bonus bonuses__bonus bonuses__bonus-width bonus__none">
                         <p class="bonus__date">7 MAIO 2022</p>
                         <img class="bonus__image" src="img/bonus.jpg">
@@ -1991,16 +2041,6 @@
 
                 </div>
                 <div class="bonuses__flex flex bonuses__flex-page">
-                    <a href="#" class="bonus bonuses__bonus bonuses__bonus-width">
-                        <p class="bonus__date">7 MAIO 2022</p>
-                        <img class="bonus__image" src="img/bonus.jpg">
-                        <p class="bonus__text">Bônus Sem Depósito | 7 Sites Com Bônus Grátis (2022)</p>
-                        <div class="bonus__more more">
-                            <p class="more__text">LER MAIS</p>
-                            <img class="more__arrow" src="img/orangearrow.png">
-                        </div>
-
-                    </a>
                 </div>
             </section>
         </section>
@@ -2009,7 +2049,7 @@
 
     </main>
     <footer class="footer">
-        <svg class="footer__dots" width="12vw" height="353" viewBox="0 0 269 353" fill="none"
+        <!-- <svg class="footer__dots" width="12vw" height="353" viewBox="0 0 269 353" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M20.7172 159.738C19.115 161.473 17.0342 162.694 14.7381 163.247C12.4419 163.8 10.0334 163.659 7.8172 162.843C5.60096 162.027 3.67646 160.572 2.28707 158.662C0.897668 156.752 0.10576 154.473 0.0114759 152.113C-0.0828087 149.753 0.524764 147.418 1.75737 145.403C2.98997 143.388 4.79226 141.784 6.93633 140.794C9.08041 139.804 11.47 139.471 13.8029 139.839C16.1358 140.207 18.3074 141.258 20.0429 142.86C22.3683 145.01 23.7454 147.995 23.8719 151.159C23.9983 154.324 22.8637 157.409 20.7172 159.738Z"
@@ -2044,10 +2084,12 @@
             <path
                 d="M252.252 114.752C250.649 116.487 248.567 117.707 246.271 118.258C243.974 118.81 241.566 118.668 239.35 117.85C237.134 117.033 235.211 115.577 233.822 113.666C232.434 111.755 231.643 109.476 231.551 107.116C231.458 104.755 232.067 102.421 233.3 100.407C234.534 98.3928 236.337 96.7899 238.482 95.8008C240.627 94.8117 243.017 94.4808 245.349 94.8499C247.682 95.219 249.853 96.2716 251.587 97.8745C252.739 98.939 253.67 100.22 254.327 101.644C254.984 103.069 255.354 104.609 255.415 106.176C255.477 107.743 255.23 109.307 254.687 110.779C254.144 112.25 253.317 113.601 252.252 114.752Z"
                 fill="#0057FF" />
-        </svg>
+        </svg> -->
 
         <div class="footer__container">
-            <div class="logo footer__logo"></div>
+            <a href="index.html">
+                <div class="logo footer__logo">LOGO</div>
+            </a>
             <div class="footer__navigation">
                 <h3 class="footer__navigation-tittle">ATUALIDADE</h3>
                 <div class="footer__navigation-container">
@@ -2114,7 +2156,7 @@
                 está apostando em operadores licenciados em sua jurisdição. Adoramos apostar, mas fazemos isso com
                 responsabilidade e pedimos que você faça o mesmo!</p>
             <p class="footer__age">18+</p>
-            <svg class="crosses__none" style="margin-top: -3vw;" width="20vw" height="174" viewBox="0 0 159 174"
+            <svg class="crosses__none footer__crosses" style="margin-top: -3vw;" width="20vw" height="174" viewBox="0 0 159 174"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M127.421 32.5293L87.1493 72.1717L46.8779 32.5293L15.2852 63.6154L55.5565 103.258L15.2852 142.9L46.8779 173.999L87.1493 134.357L127.421 173.999L159 142.9L118.729 103.258L159 63.6154L127.421 32.5293Z"

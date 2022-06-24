@@ -19,10 +19,7 @@ a {
     grid-template-columns: 1fr 4fr;
     background-color: white;
     justify-items: center;
-}
-
-.header__logo {
-    width: 10%;
+    align-items: center;
 }
 
 .header__menu {
@@ -843,7 +840,6 @@ a {
 .footer {
     background-color: #040218;
     color: #ffffff;
-    position: relative;
 }
 
 .footer__container {
@@ -1465,6 +1461,16 @@ form {
     padding-right: 1.3vw;
 }
 
+.form2 {
+    display: none;
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+}
+
+.form2.active {
+    display: block;
+}
+
 .form__container {
     display: grid;
     row-gap: 1vw;
@@ -1562,6 +1568,7 @@ textarea:focus {
 .reply {
     width: 100%;
     border-bottom: 0.1vw solid rgba(199, 199, 199, 0.3);
+    margin-bottom: 4vw;
 }
 
 .tittle__page-reply {
@@ -1669,6 +1676,41 @@ textarea:focus {
     cursor: default;
 }
 
+.menu__button {
+    display: none;
+}
+.logo {
+    background-color: rgba(0, 87, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__logo {
+    color: white;
+    padding: 0.8vw 2vw;
+    font-weight: 600;
+    font-size: 1vw;
+    height: 20%;
+    margin: auto;
+}
+
+
+.footer__logo {
+    color: white;
+    padding: 0.8vw 2vw;
+    font-weight: 600;
+    font-size: 2vw;
+    height: 20%;
+    margin: 0px;
+}
+.menu__button {
+    display: none;
+}
+.menu__humburger {
+    display: none;
+}
+
 @media only screen and (max-width: 1230px) {
     .offer {
         grid-template-columns: 0.9fr 1.2fr 0.1fr 1fr 0.1fr 1.3fr;
@@ -1712,6 +1754,9 @@ textarea:focus {
     .page__header-way {
         width: 31%;
     }
+    .footer__crosses {
+        width: 10vw;
+    }
 }
 
 @media only screen and (max-width: 892px) {
@@ -1721,6 +1766,14 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 768px) {
+    .footer__logo {
+       width: 30%;
+       padding: 3vw;
+       display: flex;
+       font-size: 3vw;
+       align-items: center;
+       margin-top: 3vw;
+    }
     .offers {
         padding: 0px 3vw;
         max-width: 100%;
@@ -2180,6 +2233,7 @@ textarea:focus {
     .main__page {
         width: 100%;
         margin-top: 0vw;
+        margin-left: 0px;
     }
 
     .page__header-texts {
@@ -2410,9 +2464,96 @@ textarea:focus {
     .card {
         width: 45%;
     }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 3vw;
+    }
+
+    .menu__button {
+        width: 5vw;
+        display: none;
+    }
+
+    .header__logo {
+        font-size: 2.5vw;
+        padding: 1.3vw 2.2vw;
+        margin-left: 0px;
+    }
+
+    .header__container-js {
+        display: none;
+    }
+
+    .header__container-js.active {
+        display: flex;
+    }
+
+    .menu__button.active {
+        display: block;
+    }
+
+    .menu__humburger {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        z-index: 99999;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .menu__navigation-burger {
+        background-color: rgba(0, 87, 255, 1);
+        padding: 3vw;
+        width: 100%;
+        height: auto;
+        max-height: 30%;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        align-items: start;
+    }
+
+    .navigation__list-burger {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: left;
+        align-content: center;
+        row-gap: 4vw;
+        font-size: 4vw;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navigation__list-item-white {
+        color: rgba(255, 255, 255, 1); 
+    }
+
+    .menu__button-burger {
+        justify-self: right;
+        margin: 0px;
+        width: 3.5vw;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    .menu__button-burger {
+        width: 4.5vw;
+    }
+
+    .navigation__list-burger {
+        row-gap: 2ю5vw;
+        font-size: 4vw;
+    }
+
+    .menu__navigation-burger {
+        max-height: 25%;
+    }
     .footer__dots {
         top: 19%;
     }
@@ -2566,5 +2707,20 @@ textarea:focus {
     .flex__nowrap {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .menu__button-burger {
+        width: 6vw;
+    }
+
+    .navigation__list-burger {
+        row-gap: 3vw;
+        font-size: 5.5vw;
+    }
+
+    .menu__navigation-burger {
+        max-height: 25%;
     }
 }
