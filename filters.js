@@ -14,14 +14,6 @@ const items = [{
     }
 
 }, {
-    container: document.querySelectorAll(".bonuses__flex"),
-    buttons: document.querySelectorAll(".bonus__button-js"),
-    arrows: {
-        right: document.querySelector(".arrow__right-jsm"),
-        left: document.querySelector(".arrow__left-jsm")
-    }
-
-}, {
     container: document.querySelectorAll(".offers"),
     buttons: document.querySelectorAll(".filter__button-js")
 }, {
